@@ -22,7 +22,7 @@ const Search = () => {
       <form className="max-w-2xl w-full mx-auto md:border-2 border bg-white shadow-sm flex items-center ">
         <input
           type="search"
-          className="focus:outline-none w-full p-4"
+          className="focus:outline-none w-full p-2 md:p-3"
           name=""
           id=""
           onChange={(e) => setQuery(e.target.value.toLocaleLowerCase())}
@@ -32,10 +32,10 @@ const Search = () => {
           to={query ? `/products/${searchedProduct[0]?._id}` : "#"}
           onClick={() => setQuery("")}
           className={cn(
-            buttonVariants({size:"lg"}),
-            "md:p-4 bg-primary hover:bg-white border border-primary text-white hover:text-primary text-xs md:text-lg rounded-none"
+            buttonVariants({size:"icon"}),
+            "p-3 md:p-4 bg-primary hover:bg-white border border-primary text-white hover:text-primary text-xs md:text-lg rounded-none"
           )}>
-          <BsSearch className="text-2xl" />
+          <BsSearch className="text-xl" />
           {/* <span className="max-lg:hidden">Search</span> */}
         </Link>
       </form>

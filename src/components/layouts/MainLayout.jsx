@@ -3,7 +3,7 @@ import Navbar from "../shared/navbar/Navbar";
 
 const MainLayout = () => {
   return (
-    <div className="bg-ghost font-mono">
+    <div className="bg-ghost font-rubik">
       <Navbar />
       <Outlet />
     </div>

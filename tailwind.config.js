@@ -22,6 +22,9 @@ export default {
         secondary: "#475569",
         ghost: "#eaf1f5",
       },
+      fontFamily: {
+        'rubik': ['Rubik', 'sans-serif'],
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

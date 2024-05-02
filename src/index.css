@@ -11,7 +11,7 @@
 }
 
 .nav-item {
-  @apply max-md:text-sm font-medium tracking-wide hover:text-primary transition-colors duration-200 w-full whitespace-nowrap;
+  @apply text-sm uppercase tracking-wide hover:text-primary transition-colors duration-200 w-full whitespace-nowrap;
 }
 
 @layer base {
