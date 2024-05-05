@@ -30,7 +30,7 @@ const heros = [
 
 const Hero = () => {
   return (
-    <div className="h-[530px] overflow-hidden flex gap-5 my-5">
+    <div className="h-[530px] overflow-hidden flex gap-5 mt-5">
       <div className="max-lg:hidden ">
         <Categories />
       </div>
