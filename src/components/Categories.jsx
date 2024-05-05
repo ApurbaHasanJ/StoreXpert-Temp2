@@ -26,17 +26,48 @@ const categories = [
   {
     item: "Gadget & Accessories",
   },
+  {
+    item: "Kitchen Products",
+  },
+  {
+    item: "Household & Outdoor",
+  },
+  {
+    item: "TC & Home Appliences",
+  },
+  {
+    item: "Electronic Accessories",
+  },
+  {
+    item: "Gadget & Accessories",
+  },
+  {
+    item: "Kitchen Products",
+  },
+  {
+    item: "Household & Outdoor",
+  },
+  {
+    item: "TC & Home Appliences",
+  },
+  {
+    item: "Electronic Accessories",
+  },
+  {
+    item: "Gadget & Accessories",
+  },
 ];
 
 const Categories = ({ name }) => {
   return (
-    <div className="bg-white lg:rounded-lg rounded-br-lg shadow-md p-2 max-md:pb-6 h-full pr-6 overflow-y-scroll max-md:text-sm">
+    <div className="bg-white shadow-md p-2 pb-6 h-full pr-6 overflow-y-scroll max-md:text-sm">
       {name && <h4 className="text-primary mb-8">WoWnex</h4>}
       {categories.map((category, index) => (
         <Link
           key={index}
           to="#"
-          className="flex items-center gap-2 whitespace-nowrap mt-4 text-secondary hover:text-primary">
+          className="flex items-center gap-2 whitespace-nowrap mt-4 text-secondary hover:text-primary"
+        >
           <FaCaretRight /> <span>{category.item}</span>
         </Link>
       ))}

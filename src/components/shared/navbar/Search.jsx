@@ -33,9 +33,9 @@ const Search = () => {
           onClick={() => setQuery("")}
           className={cn(
             buttonVariants({size:"icon"}),
-            "p-3 md:p-4 bg-primary hover:bg-white border border-primary text-white hover:text-primary text-xs md:text-lg rounded-none"
+            "p-3 md:p-4 bg-primary hover:bg-white border border-primary text-white hover:text-primary text-sm md:text-xl rounded-none"
           )}>
-          <BsSearch className="text-xl" />
+          <BsSearch />
           {/* <span className="max-lg:hidden">Search</span> */}
         </Link>
       </form>

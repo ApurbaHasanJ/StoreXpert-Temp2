@@ -77,6 +77,7 @@ const Navbar = () => {
               </span>
             </Link>
           </div>
+        
         </div>
         <div className="md:hidden relative bg-white container z-10 py-3 transition-all ease-in-out">
           <Search scroll={scroll} />
@@ -86,18 +87,21 @@ const Navbar = () => {
       {/* 2nd column */}
       <div className="bg-white max-md:hidden">
         <div className="container w-full flex items-center gap-5 justify-between">
+          <div className="max-w w-fit h-full relative">
+            
           <div
             onClick={() => setShowCategories(!showCategories)}
-            className="flex items-center gap-3 bg-primary text-white py-4 px-6">
+            className="flex items-center justify-between gap-10 bg-primary text-white py-4 px-6">
             <p className="text-lg font-semibold">All Departments</p>
             <FiMenu className="text-xl"/>
           </div>
           <div
             className={cn(
-              "lg:hidden absolute duration-500 z-10 top-[52px]",
+              "w-full h-[530px] absolute duration-500 z-10 top-[60px]",
               showCategories ? "left-0" : "-left-[1000px]"
             )}>
             <Categories />
+          </div>
           </div>
 
           <div className="max-md:hidden py-5 flex items-center lg:gap-10 gap-4">

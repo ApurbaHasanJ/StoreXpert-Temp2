@@ -4,8 +4,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  // CarouselNext,
+  // CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import hero1 from "/src/assets/hero/hero1.jpg";
@@ -30,12 +30,13 @@ const heros = [
 
 const Hero = () => {
   return (
-    <div className="max-h-[468.5px] flex gap-5">
-      <div className="max-lg:hidden">
+    <div className="h-[530px] overflow-hidden flex gap-5 my-5">
+      <div className="max-lg:hidden ">
         <Categories />
       </div>
+
       <Carousel
-        className="w-full"
+        className="w-full h-full"
         opts={{
           align: "start",
           loop: true,
@@ -44,14 +45,15 @@ const Hero = () => {
           Autoplay({
             delay: 5000,
           }),
-        ]}>
+        ]}
+      >
         <CarouselContent>
           {heros.map((hero) => (
             <CarouselItem key={hero?._id}>
               <Card>
                 <CardContent className="flex items-center justify-center">
                   <img
-                    className="w-full h-auto object-cover rounded-lg"
+                    className="w-full h-[550px] object-cover"
                     src={hero?.img}
                     alt=""
                   />
@@ -60,10 +62,11 @@ const Hero = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
       </Carousel>
-      <BestSellingProduct/>
+
+      <div className="max-lg:hidden">
+      <BestSellingProduct />
+      </div>
     </div>
   );
 };

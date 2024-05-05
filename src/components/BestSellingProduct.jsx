@@ -7,12 +7,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { cn } from "@/lib/utils";
 import Autoplay from "embla-carousel-autoplay";
 const BestSellingProduct = () => {
   return (
     <div className="bg-white">
       <Carousel
-        className="max-w-72 w-full"
+        className="w-72"
         opts={{
           align: "start",
           loop: true,
@@ -21,20 +22,46 @@ const BestSellingProduct = () => {
           Autoplay({
             delay: 5000,
           }),
-        ]}>
-        <div className="bg-primary/30">
+        ]}
+      >
+        <div className="bg-primary/5 p-4  flex items-center justify-between">
           <p className=" text-primary">BEST SELLING</p>
+          <div className="bg-red-400 flex items-center w-20 justify-end relative">
+          <CarouselNext className="rounded-none"/>
+          <CarouselPrevious className="rounded-none"/>
+          </div>
         </div>
-        <CarouselContent>
-          {products.map((hero) => (
-            <CarouselItem key={hero?._id}>
+        <CarouselContent className="grid grid-cols-1 gap-5 px-2 py-4">
+          {products.map((product) => (
+            <CarouselItem key={product?._id}>
               <Card>
-                <CardContent className="flex items-center justify-center">
+                <CardContent className="flex items-center justify-between gap-2">
                   <img
-                    className="w-full h-auto object-cover rounded-lg"
-                    src={hero?.img}
+                    className="w-24 aspect-square object-cover rounded-lg"
+                    src={product?.images[0]}
                     alt=""
                   />
+                  <div>
+                    <p className="line-clamp-2">{product?.title}</p>
+                    <div className="flex items-center gap-3 mb-3">
+                      <p className="text-primary font-me text-lg md:text-xl">
+                        ৳{" "}
+                        {product?.disc
+                          ? Math.floor(
+                              ((100 - product?.disc) / 100) * product?.price
+                            )
+                          : product?.price}
+                      </p>
+                      <s
+                        className={cn(
+                          " text-secondary block",
+                          product?.disc ? "block" : "hidden"
+                        )}
+                      >
+                        ৳ {product?.price}
+                      </s>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </CarouselItem>
