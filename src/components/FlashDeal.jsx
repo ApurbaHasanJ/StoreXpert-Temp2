@@ -1,8 +1,15 @@
-
+import { useMemo } from "react";
+import products from "../../public/products.json";
+import { SectionHeader } from "./shared/SectionHeader";
+import ProductCards from "./shared/ProductCards";
 const FlashDeal = () => {
+
+    const memoizedProducts = useMemo(() => products.slice(0, 4), []);
+
     return (
-      <section>
-        
+      <section className="mt-12 bg-white py-10 px-6 shadow">
+        <SectionHeader title="Flash Deal"/>
+        <ProductCards products={memoizedProducts}/>
       </section>
     )
   }

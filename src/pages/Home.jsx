@@ -1,4 +1,5 @@
 import FeaturedProducts from "@/components/FeaturedProducts"
+import FlashDeal from "@/components/FlashDeal"
 import Hero from "@/components/Hero"
 import PopularCategories from "@/components/PopularCategories"
 
@@ -8,6 +9,7 @@ const Home = () => {
     <div className="container">
       <Hero/>
       <FeaturedProducts/>
+      <FlashDeal/>
       <PopularCategories/>
     </div>
   )
