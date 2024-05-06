@@ -1,5 +1,6 @@
 import FeaturedProducts from "@/components/FeaturedProducts"
 import Hero from "@/components/Hero"
+import PopularCategories from "@/components/PopularCategories"
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <div className="container">
       <Hero/>
       <FeaturedProducts/>
+      <PopularCategories/>
     </div>
   )
 }

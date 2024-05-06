@@ -1,4 +1,4 @@
-import Categories from "./Categories";
+import Categories from "./AllDepartments";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,

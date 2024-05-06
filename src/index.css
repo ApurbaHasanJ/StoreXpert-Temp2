@@ -19,19 +19,19 @@
     @apply lg:text-6xl md:text-5xl text-4xl font-bold drop-shadow;
   }
   h2 {
-    @apply lg:text-5xl md:text-4xl sm:text-3xl text-[26px] font-bold drop-shadow;
+    @apply lg:text-5xl md:text-4xl sm:text-3xl text-[26px] font-bold;
   }
   h3 {
-    @apply lg:text-4xl text-3xl font-bold drop-shadow;
+    @apply lg:text-4xl text-3xl font-bold;
   }
   h4 {
-    @apply lg:text-3xl text-2xl font-bold drop-shadow;
+    @apply lg:text-3xl text-2xl font-bold;
   }
   h5 {
-    @apply lg:text-2xl text-xl font-bold drop-shadow;
+    @apply lg:text-2xl text-xl font-bold;
   }
   h6 {
-    @apply lg:text-xl md:text-base text-sm font-bold drop-shadow;
+    @apply lg:text-xl md:text-base text-sm font-semibold;
   }
 }
 

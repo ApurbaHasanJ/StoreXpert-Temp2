@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import NavItems from "./NavItems";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import Categories from "@/components/Categories";
+import Categories from "@/components/AllDepartments";
 import Search from "./Search";
 import { FiMenu } from "react-icons/fi";
 

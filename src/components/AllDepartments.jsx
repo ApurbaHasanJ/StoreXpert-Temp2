@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaCaretRight } from "react-icons/fa6";
 
-const categories = [
+const departments = [
   {
     item: "Women & Girls Fashion",
   },
@@ -58,21 +58,21 @@ const categories = [
   },
 ];
 
-const Categories = ({ name }) => {
+const AllDepartments = ({ name }) => {
   return (
     <div className="bg-white shadow-md p-2 pb-6 h-full pr-6 overflow-y-scroll max-md:text-sm">
       {name && <h4 className="text-primary mb-8">WoWnex</h4>}
-      {categories.map((category, index) => (
+      {departments.map((department, index) => (
         <Link
           key={index}
           to="#"
           className="flex items-center gap-2 whitespace-nowrap mt-4 text-secondary hover:text-primary"
         >
-          <FaCaretRight /> <span>{category.item}</span>
+          <FaCaretRight /> <span>{department.item}</span>
         </Link>
       ))}
     </div>
   );
 };
 
-export default Categories;
+export default AllDepartments;

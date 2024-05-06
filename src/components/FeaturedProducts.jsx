@@ -5,7 +5,7 @@ import { Button, buttonVariants } from "./ui/button";
 const featuredProducts = products.slice(0, 3);
 const FeaturedProducts = () => {
   return (
-    <section className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-6 justify-between">
+    <section className="mt-14 grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-6 justify-between">
       {featuredProducts.map((product) => (
         <div
           key={product?._id}
