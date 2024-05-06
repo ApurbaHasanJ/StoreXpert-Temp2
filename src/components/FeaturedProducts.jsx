@@ -1,49 +1,15 @@
-import { cn } from "@/lib/utils";
+import { useMemo } from "react";
 import products from "../../public/products.json";
-import { Button, buttonVariants } from "./ui/button";
-
-const featuredProducts = products.slice(0, 3);
+import { SectionHeader } from "./shared/SectionHeader";
+import ProductCards from "./shared/ProductCards";
 const FeaturedProducts = () => {
+ 
+  const memoizedProducts = useMemo(() => products.slice(0, 8), []);
+
   return (
-    <section className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-6 justify-between">
-      {featuredProducts.map((product) => (
-        <div
-          key={product?._id}
-          className="flex items-center justify-between gap-2 bg-white p-5"
-        >
-          <div>
-            <div className="flex items-center gap-3 mb-2">
-              <p className="text-primary md:text-lg">
-                ৳{" "}
-                {product?.disc
-                  ? Math.floor(((100 - product?.disc) / 100) * product?.price)
-                  : product?.price}
-              </p>
-              <s
-                className={cn(
-                  " text-gray-400",
-                  product?.disc ? "block" : "hidden"
-                )}
-              >
-                ৳ {product?.price}
-              </s>
-            </div>
-            <p className="text-xl sm:text-2xl md:text-[28px] font-thin">
-              Sale Up To <span className="font-medium">10%</span>{" "}Off
-            </p>
-            <Button
-              className={cn(buttonVariants({ variant: "outline" }), "mt-4")}
-            >
-              BUY NOW
-            </Button>
-          </div>
-          <img
-            className="w-24 md:w-28 aspect-square rounded-md"
-            src={product?.images[0]}
-            alt=""
-          />
-        </div>
-      ))}
+    <section className="mt-12 bg-white py-10 px-6 shadow">
+      <SectionHeader title="Featured Products"/>
+      <ProductCards products={memoizedProducts}/>
     </section>
   );
 };

@@ -15,14 +15,14 @@ const ProductCards = ({ products }) => {
                 src={product?.images[0]}
                 alt={product?.title}
               />
-              <span
+              <div
                 className={cn(
-                  "bg-primary text-ghost absolute top-0 left-0 rounded-full px-2 font-medium text-sm",
+                  "bg-primary text-ghost font-medium text-sm absolute top-1 left-1 w-9 h-9 rounded-full flex items-center justify-center",
                   product?.disc ? "block" : "hidden"
                 )}
               >
-                {product?.disc}&#37;
-              </span>
+                <p>{product?.disc}&#37;</p>
+              </div>
             </div>
 
             <p className="text-sm md:text-base font-thin mt-3 mx-2 text-center capitalize line-clamp-1 text-black hover:text-primary duration-500">
