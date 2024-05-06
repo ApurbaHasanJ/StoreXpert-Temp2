@@ -17,11 +17,11 @@ const ProductCards = ({ products }) => {
               />
               <div
                 className={cn(
-                  "bg-primary text-ghost font-medium text-sm absolute top-1 left-1 w-9 h-9 rounded-full flex items-center justify-center",
+                  "bg-primary text-ghost text-xs absolute top-1 left-1 w-8 h-8 rounded-full",
                   product?.disc ? "block" : "hidden"
                 )}
               >
-                <p>{product?.disc}&#37;</p>
+                <p className="p-2 px-1">{product?.disc}&#37;</p>
               </div>
             </div>
 
