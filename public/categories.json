@@ -1,85 +1,85 @@
 [
     {
       "_id": 1,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-13.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760357/Products/shoes/shoe1_azmaau.jpg",
       "title": "Smart Watch",
       "category": "smart-watch"
     },
     {
       "_id": 2,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-13.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760357/Products/shoes/shoe1_azmaau.jpg",
       "title": "Shirt",
       "category": "shirt"
     },
     {
       "_id": 3,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-13.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760410/Products/t-shirts/t-shirt6_a9idry.jpg",
       "title": "Backpack",
       "category": "backpack"
     },
     {
       "_id": 4,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-13.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760410/Products/t-shirts/t-shirt6_a9idry.jpg",
       "title": "T-Shirt",
       "category": "t-shirt"
     },
     {
       "_id": 5,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-13.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760410/Products/t-shirts/t-shirt6_a9idry.jpg",
       "title": "Hand Care",
       "category": "hand-care"
     },
     {
       "_id": 6,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-10.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760458/Products/watches/watch11_eudnxe.jpg",
       "title": "Drink Bottles",
       "category": "drink-bottles"
     },
     {
       "_id": 7,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-10.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760458/Products/watches/watch11_eudnxe.jpg",
       "title": "Equipment",
       "category": "equipment"
     },
     {
       "_id": 8,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-10.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760410/Products/t-shirts/t-shirt6_a9idry.jpg",
       "title": "Jewelry",
       "category": "jewelry"
     },
     {
       "_id": 9,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-10.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760410/Products/t-shirts/t-shirt6_a9idry.jpg",
       "title": "Shoes",
       "category": "shoes"
     },
     {
       "_id": 10,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-10.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760458/Products/watches/watch11_eudnxe.jpg",
       "title": "Hat",
       "category": "hat"
     },
     {
       "_id": 11,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-10.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760458/Products/watches/watch11_eudnxe.jpg",
       "title": "Jewelry",
       "category": "jewelry"
     },
     {
       "_id": 12,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-10.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760458/Products/watches/watch11_eudnxe.jpg",
       "title": "Shoes",
       "category": "shoes"
     },
     {
       "_id": 13,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-10.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760410/Products/t-shirts/t-shirt6_a9idry.jpg",
       "title": "Hat",
       "category": "hat"
     },
     {
       "_id": 14,
-      "img": "https://revel-html.codebasket.xyz/assets/images/category-10.jpg",
+      "img": "https://res.cloudinary.com/dxixdugif/image/upload/v1712760410/Products/t-shirts/t-shirt6_a9idry.jpg",
       "title": "Hat",
       "category": "hat"
     }
