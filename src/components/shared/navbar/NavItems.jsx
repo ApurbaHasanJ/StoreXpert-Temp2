@@ -3,19 +3,19 @@ import { HashLink as NavLink } from "react-router-hash-link";
 
 const navItems = [
   {
-    item: "home",
+    title: "home",
     url: "/",
   },
   {
-    item: "flash sale",
+    title: "flash sale",
     url: "/#flash-sale",
   },
   {
-    item: "hot product",
+    title: "hot product",
     url: "/#hot-product",
   },
   {
-    item: "shop",
+    title: "shop",
     url: "/#shop",
   },
 ];
@@ -29,7 +29,7 @@ const NavItems = () => {
           to={nav?.url}
           smooth
           className="nav-item capitalize">
-          {nav?.item}
+          {nav?.title}
         </NavLink>
       ))}
     </>
