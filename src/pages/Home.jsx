@@ -1,5 +1,6 @@
 import AdvertiseCards from "@/components/AdvertiseCards"
 import { AllProducts } from "@/components/AllProducts"
+import DirectCatLinks from "@/components/DirectCatLinks"
 import FeaturedProducts from "@/components/FeaturedProducts"
 import FlashDeal from "@/components/FlashDeal"
 import Hero from "@/components/Hero"
@@ -19,6 +20,7 @@ const Home = () => {
       <FeaturedProducts/>
       <AdvertiseCards/>
       <AllProducts/>
+      <DirectCatLinks/>
     </div>
   )
 }
