@@ -3,7 +3,7 @@ import { SectionHeader } from "./shared/SectionHeader";
 
 const PopularCategories = () => {
   return (
-    <section className="mt-12 bg-white p-6">
+    <section className="mt-12 bg-white py-10 px-6">
       <SectionHeader title="Explore Popular Categories" />
       <div className="mt-9 grid grid-cols-4 md:grid-cols-7 justify-between gap-4">
         {categories.map((cat) => (

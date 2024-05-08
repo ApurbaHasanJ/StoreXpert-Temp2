@@ -4,6 +4,7 @@ import FeaturedProducts from "@/components/FeaturedProducts"
 import FlashDeal from "@/components/FlashDeal"
 import Hero from "@/components/Hero"
 import HighlightProducts from "@/components/HighlightProducts"
+import HotProduct from "@/components/HotProduct"
 import PopularCategories from "@/components/PopularCategories"
 
 
@@ -13,9 +14,10 @@ const Home = () => {
       <Hero/>
       <HighlightProducts/>
       <FlashDeal/>
-      <AdvertiseCards/>
       <PopularCategories/>
+      <HotProduct/>
       <FeaturedProducts/>
+      <AdvertiseCards/>
       <AllProducts/>
     </div>
   )
