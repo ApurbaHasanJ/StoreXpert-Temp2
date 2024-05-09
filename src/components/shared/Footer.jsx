@@ -79,12 +79,12 @@ const Footer = () => {
   return (
     <footer>
       <div className="pt-16 container">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 items-center lg:justify-items-center -mb-14 px-6 drop-shadow-md bg-white md:gap-10 gap-5 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:items-center lg:justify-items-center -mb-14 px-6 drop-shadow-md bg-white md:gap-10 gap-5 py-10">
           {servcies?.map((servcie, index) => (
             <div
               key={index}
               className={cn(
-                "flex items-center gap-3 px-14 border-secondary/65 border-r-2 whitespace-nowrap",
+                "flex items-center gap-3 lg:px-14 border-secondary/65 border-r-2 whitespace-nowrap",
                 index === 3 && "lg:border-none"
               )}
             >

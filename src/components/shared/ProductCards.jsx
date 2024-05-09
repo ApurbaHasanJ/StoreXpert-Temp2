@@ -8,7 +8,7 @@ const ProductCards = ({ products }) => {
     <div className="mt-9 grid lg:grid-cols- md:grid-cols-4 sm:grid-cols-3 grid-cols-2 md:gap-5 gap-3 gap-y-8">
       {products?.map((product) => (
         <div key={product?._id} className="flex flex-col justify-between border">
-          <Link to={`/products/${product?._id}`}>
+          <Link to={`/view-product/${product?._id}`}>
             <div className="overflow-hidden bg-ghost relative">
               <img
                 className=" h-full w-full scale-100 hover:scale-105 duration-300 aspect-square"

@@ -1,5 +1,6 @@
 import App from "@/App";
 import Home from "@/pages/Home";
+import ViewProduct from "@/pages/ViewProduct";
 import { createBrowserRouter } from "react-router-dom";
 
 export const router = createBrowserRouter([
@@ -10,7 +11,12 @@ export const router = createBrowserRouter([
         {
             index: true,
             element: <Home/>
+        },
+        {
+            path: "/view-product/:id",
+            element:<ViewProduct/>
         }
+        
      ] 
     },
 ]);

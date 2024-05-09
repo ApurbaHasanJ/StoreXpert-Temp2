@@ -9,20 +9,20 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-slate-50 hover:bg-primary/90 dark:bg-slate-50 dark:text-primary dark:hover:bg-slate-50/90",
+        default: "bg-primary text-slate-50 hover:bg-primary/80 dark:bg-slate-50 dark:text-primary dark:hover:bg-slate-50/90",
         destructive:
           "bg-red-500 text-slate-50 hover:bg-red-500/90 dark:bg-red-900 dark:text-slate-50 dark:hover:bg-red-900/90",
         outline:
-          "border border-primary hover:bg-primary text-primary hover:text-white dark:border-slate-800 dark:bg-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50",
+          "border bg-inherit border-primary hover:bg-primary text-primary hover:text-white dark:border-slate-800 dark:bg-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50",
         secondary:
           "bg-slate-100 text-primary hover:bg-slate-100/80 dark:bg-slate-800 dark:text-slate-50 dark:hover:bg-slate-800/80",
         ghost: "hover:bg-slate-100 hover:text-primary dark:hover:bg-slate-800 dark:hover:text-slate-50",
-        link: "text-primary bg-white hover:bg-white underline-offset-4 hover:underline dark:text-slate-50",
+        link: "text-primary bg-inherit hover:bg-inherit underline-offset-4 hover:underline dark:text-slate-50",
       },
       size: {
-        default: "h-10 px-4 py-2",
-        sm: "h-9 px-3",
-        lg: "h-11 px-8",
+        default: "px-4 py-2",
+        sm: "px-3",
+        lg: "px-8",
         icon: "p-4",
       },
     },

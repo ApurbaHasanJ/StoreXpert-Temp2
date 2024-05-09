@@ -8,6 +8,8 @@ import { SectionHeader } from "./shared/SectionHeader";
 const HotProduct = () => {
   const product = products[10];
 
+  const date = new Date();
+
   return (
     <section id="hot-product" className="mt-12 bg-white py-10 px-6 shadow">
       <SectionHeader title="Hot Deal This Week" />
@@ -39,22 +41,22 @@ const HotProduct = () => {
           <div className="flex max-md:flex-col md:items-center gap-4 my-4">
             <div className="flex items-start gap-3 text-2xl md:text-4xl font-extralight text-secondary">
               <div className="flex flex-col items-center gap-3">
-                <p className="font-semibold">12</p>
+                <p className="font-semibold">{date.getMonth()}</p>
                 <p className="text-xs">DAYS</p>
               </div>
               |
               <div className="flex flex-col items-center gap-3">
-                <p className="font-semibold">22</p>
+                <p className="font-semibold">{date.getHours()}</p>
                 <p className="text-xs">HOURS</p>
               </div>
               |
               <div className="flex flex-col items-center gap-3">
-                <p className="font-semibold">24</p>
+                <p className="font-semibold">{date.getMinutes()}</p>
                 <p className="text-xs">MINS</p>
               </div>
               |
               <div className="flex flex-col items-center gap-3">
-                <p className="font-semibold">33</p>{" "}
+                <p className="font-semibold">{date.getSeconds()}</p>
                 <p className="text-xs">SECS</p>
               </div>
             </div>

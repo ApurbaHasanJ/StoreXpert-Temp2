@@ -7,8 +7,8 @@ const navItems = [
     url: "/",
   },
   {
-    title: "flash sale",
-    url: "/#flash-sale",
+    title: "flash deal",
+    url: "/#flash-deal",
   },
   {
     title: "hot product",

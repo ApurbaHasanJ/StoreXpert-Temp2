@@ -7,7 +7,7 @@ const FlashDeal = () => {
     const memoizedProducts = useMemo(() => products.slice(0, 4), []);
 
     return (
-      <section className="mt-12 bg-white py-10 px-6 shadow">
+      <section id="flash-deal" className="mt-12 bg-white py-10 px-6 shadow">
         <SectionHeader title="Flash Deal"/>
         <ProductCards products={memoizedProducts}/>
       </section>
