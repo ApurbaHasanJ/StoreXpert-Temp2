@@ -72,7 +72,7 @@ const ProductDetails = ({ product }) => {
         Order Now
       </Link>
       <Button
-        // onClick={() => handleAddToCart(product)}
+        onClick={() => handleAddToCart(product)}
         size="lg"
         variant="outline"
         className="flex mt-4 justify-center items-center gap-2 w-full text-xl py-2"
@@ -85,7 +85,7 @@ const ProductDetails = ({ product }) => {
         onClick={handleCallClick}
         className="mt-14 px-7 py-3 text-center border-2 border-secondary/40 border-dashed text-secondary/80"
       >
-        <p>এই পণ্য সম্পর্কে জানতে আমাদের কল করুনঃ</p>
+        <p>পণ্য সম্পর্কে জানতে আমাদের কল করুনঃ</p>
         <div className="flex items-center justify-center gap-2 text-3xl">
           <IoCallOutline /> <span>01710-696950</span>
         </div>

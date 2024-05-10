@@ -14,7 +14,6 @@ export const cartSlice = createSlice({
   initialState, // The initial state of the slice
   reducers: {
     addToCart: (state, action) => {
-        console.log(state)
       // Check if the item already exists in the cart to prevent duplicates
       const isExist = state.products?.find(
         (item) => item._id === action.payload._id
@@ -31,7 +30,7 @@ export const cartSlice = createSlice({
       }
 
       // Recalculate the subtotal after adding the item
-      //   state.subTotal = calculateSubTotal(state)
+        state.subTotal = calculateSubTotal(state)
     },
 
     // Reducer to handle removing items from the cart
@@ -45,7 +44,7 @@ export const cartSlice = createSlice({
       toast.success("Item removed from cart successfully"); // Show success message
 
       // Recalculate the subtotal after removal
-      //    state.subTotal = calculateSubTotal(state);
+         state.subTotal = calculateSubTotal(state);
     },
 
     // Reducer to increase the quantity of a specific item in the cart
@@ -58,7 +57,7 @@ export const cartSlice = createSlice({
       // Increase quantity and recalculate subtotal if the item is found
       if (product) {
         product.quantity += 1;
-        // state.subTotal = calculateSubTotal(state);
+        state.subTotal = calculateSubTotal(state);
       }
     },
 
@@ -71,7 +70,7 @@ export const cartSlice = createSlice({
       // Decrease quantity only if it is greater than 1 to avoid negative quantities
       if (product && product.quantity > 1) {
         product.quantity -= 1;
-        // state.subTotal =  calculateSubTotal(state); // Recalculate subtotal after decrementing quantity
+        state.subTotal =  calculateSubTotal(state); // Recalculate subtotal after decrementing quantity
       }
     },
   },

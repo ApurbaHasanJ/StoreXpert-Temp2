@@ -1,17 +1,25 @@
+import { cn } from "@/lib/utils";
+import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { FaCartPlus } from "react-icons/fa6";
+import { Button } from "@/components/ui/button";
 import products from "../../public/products.json";
+import { addToCart } from "@/redux/slices/cart/cart";
+import PageHeader from "@/components/shared/PageHeader";
+import { HashLink as Link } from "react-router-hash-link";
+import ServiceDesc from "@/components/viewProduct/ServiceDesc";
+import ProductDesc from "@/components/viewProduct/ProductDesc";
 import ProductViewImg from "@/components/viewProduct/ProductViewImg";
 import ProductDetails from "@/components/viewProduct/ProductDetails";
-import ProductDesc from "@/components/viewProduct/ProductDesc";
 import RelatedProducts from "@/components/viewProduct/RelatedProducts";
-import PageHeader from "@/components/shared/PageHeader";
-import ServiceDesc from "@/components/viewProduct/ServiceDesc";
 
 const ViewProduct = () => {
   const param = useParams();
+  const dispatch = useDispatch();
   const [product, setProduct] = useState();
   const [viewImg, setViewImg] = useState("");
+  const [showAddToCart, setShowAddToCart] = useState(false);
 
   // setting default view img
   useEffect(() => {
@@ -20,10 +28,52 @@ const ViewProduct = () => {
     setViewImg(product?.images[0]);
   }, [param.id, product?.images]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowAddToCart(window.scrollY > 600 ? true : false);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section className="bg-white pb-10">
+      {/* page route */}
       <PageHeader props="View Product" />
 
+      {/* showing add to cart on top, after scroll */}
+      <div
+        className={cn(
+          " bg-ghost py-3 fixed left-0 right-0 z-10 duration-1000",
+          showAddToCart ? "top-0" : "-top-96"
+        )}
+      >
+        <div className="container flex items-center justify-between gap-10 md:gap-20">
+          <div>
+            <h5 className="line-clamp-1 capitalize font-thin">
+              {product?.title}
+            </h5>
+            <Link to="#details" smooth className="text-blue-600">
+              Details
+            </Link>
+          </div>
+
+          <Button
+            onClick={() => dispatch(addToCart(product))}
+            size="lg"
+            variant="outline"
+            className="flex w-fit justify-center items-center gap-2 md:text-xl "
+          >
+            <FaCartPlus /> <span>Add to Cart</span>
+          </Button>
+        </div>
+      </div>
+
+      {/* product title */}
       <h5 className="container border-b border-secondary/20 py-5 mb-5 capitalize font-thin">
         {product?.title}
       </h5>

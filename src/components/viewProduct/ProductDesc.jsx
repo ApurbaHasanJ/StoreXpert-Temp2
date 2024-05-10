@@ -3,8 +3,8 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const ProductDesc = ({ product }) => {
   // console.log(product);
   return (
-    <section className="">
-      <Tabs defaultValue="product-details" className="">
+    <section id="details" className="py-5">
+      <Tabs defaultValue="product-details">
         <TabsList>
           <TabsTrigger value="product-details">Product Details</TabsTrigger>
           <TabsTrigger value="delivery-information">

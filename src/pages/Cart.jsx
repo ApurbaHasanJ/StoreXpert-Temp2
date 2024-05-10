@@ -66,7 +66,7 @@ import { buttonVariants } from "@/components/ui/button";
           <div
             className={cn(
               "my-8 flex flex-col items-center",
-            //   carts.length && "hidden"
+              carts.length && "hidden"
             )}>
             <img className="max-w-xs w-full mx-auto" src={emptyCartImg} alt="" />
             <p className="text-xl md:text-3xl my-6">
