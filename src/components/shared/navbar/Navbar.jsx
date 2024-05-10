@@ -7,15 +7,14 @@ import { cn } from "@/lib/utils";
 import Categories from "@/components/AllDepartments";
 import Search from "./Search";
 import { FiMenu } from "react-icons/fi";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
   const [showCategories, setShowCategories] = useState(false);
   const [scroll, setScroll] = useState(false);
 
   // cart quantity
-  //   const selectedItem = useSelector((state) => state?.cart?.selectedItem);
-
-  const selectedItem = 0;
+    const selectedItem = useSelector((state) => state?.cart?.selectedItem);
 
   // Add an event listener to track scroll events
   useEffect(() => {
