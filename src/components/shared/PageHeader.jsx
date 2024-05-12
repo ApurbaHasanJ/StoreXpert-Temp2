@@ -3,7 +3,7 @@ const PageHeader = ({ props }) => {
     <div className="border-b bg-ghost py-3">
       <div className="container flex items-center justify-start gap-3 text-xs">
         <p className="text-blue-600">Home</p> /
-        <p className="text-secondary">{props}</p>
+        <p className="text-secondary capitalize">{props}</p>
       </div>
     </div>
   );

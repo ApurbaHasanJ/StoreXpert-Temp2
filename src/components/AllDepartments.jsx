@@ -4,57 +4,67 @@ import { FaCaretRight } from "react-icons/fa6";
 const departments = [
   {
     item: "Women & Girls Fashion",
+    category: "girls-fashion",
   },
   {
     item: "Watch’s Bags & Jewellery",
+    category: "accessories",
   },
   {
     item: "Kid’s & Men’s Fashion",
+    category: "mens-fashion",
   },
   {
     item: "Kitchen Products",
+    category: "kitchen",
   },
   {
     item: "Household & Outdoor",
+    category: "household-outdoor",
   },
   {
-    item: "TC & Home Appliences",
+    item: "TC & Home Appliances",
+    category: "home-appliances",
   },
   {
     item: "Electronic Accessories",
+    category: "electronic-accessories",
   },
   {
     item: "Gadget & Accessories",
+    category: "gadget-accessories",
+  },
+  {
+    item: "Women & Girls Fashion",
+    category: "girls-fashion",
+  },
+  {
+    item: "Watch’s Bags & Jewellery",
+    category: "accessories",
+  },
+  {
+    item: "Kid’s & Men’s Fashion",
+    category: "mens-fashion",
   },
   {
     item: "Kitchen Products",
+    category: "kitchen",
   },
   {
     item: "Household & Outdoor",
+    category: "household-outdoor",
   },
   {
-    item: "TC & Home Appliences",
-  },
-  {
-    item: "Electronic Accessories",
-  },
-  {
-    item: "Gadget & Accessories",
-  },
-  {
-    item: "Kitchen Products",
-  },
-  {
-    item: "Household & Outdoor",
-  },
-  {
-    item: "TC & Home Appliences",
+    item: "TC & Home Appliances",
+    category: "home-appliances",
   },
   {
     item: "Electronic Accessories",
+    category: "electronic-accessories",
   },
   {
     item: "Gadget & Accessories",
+    category: "gadget-accessories",
   },
 ];
 
@@ -65,7 +75,7 @@ const AllDepartments = ({ name }) => {
       {departments.map((department, index) => (
         <Link
           key={index}
-          to="#"
+          to={`/shop/${department?.category}`}
           className="flex items-center gap-2 whitespace-nowrap mt-4 text-secondary hover:text-primary"
         >
           <FaCaretRight /> <span>{department.item}</span>

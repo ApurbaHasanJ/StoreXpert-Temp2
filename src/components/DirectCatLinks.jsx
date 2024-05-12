@@ -1,4 +1,6 @@
-import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
+import { buttonVariants } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 const DirectCatLinks = () => {
   return (
@@ -8,7 +10,9 @@ const DirectCatLinks = () => {
         <div className="z-10 text-center">
           <p className="text-sm">Season Sale!</p>
           <h4 className="my-3">New Arrivals</h4>
-          <Button size={"sm"}>Shop Now</Button>
+          <Link to="/shop/new-arrivals" className={cn(buttonVariants())}>
+            Shop Now
+          </Link>
         </div>
       </div>
 
@@ -18,13 +22,15 @@ const DirectCatLinks = () => {
         <div className="text-center z-10">
           <p className="text-sm">Season Sale!</p>
           <h4 className="my-3">Mesh Shoes MENS</h4>
-          <Button
-            size={"sm"}
-            variant={"outline"}
-            className="bg-none text-white border-white"
+          <Link
+            to="/shop/mens-fashion"
+            className={cn(
+              buttonVariants({ variant: "outline" }),
+              "bg-none text-white border-white"
+            )}
           >
             Shop Now
-          </Button>
+          </Link>
         </div>
       </div>
       <div className="max-md:hidden relative bg-blend-darken flex items-center justify-center bg-[url('/src/assets/others/girls-fashion.jpg')] bg-cover bg-center bg-no-repeat h-[500px]">
@@ -32,7 +38,9 @@ const DirectCatLinks = () => {
         <div className="text-center z-10">
           <p className="text-sm">Get Up To 20% Off!</p>
           <h4 className="my-3">Girs Fashion</h4>
-          <Button size={"sm"}>Shop Now</Button>
+          <Link to="/shop/girls-fashion" className={cn(buttonVariants())}>
+            Shop Now
+          </Link>
         </div>
       </div>
     </section>

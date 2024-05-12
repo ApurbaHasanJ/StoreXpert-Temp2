@@ -1,6 +1,6 @@
 import { BsCart3 } from "react-icons/bs";
 import { LuPhoneCall } from "react-icons/lu";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import NavItems from "./NavItems";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -12,9 +12,11 @@ import { useSelector } from "react-redux";
 const Navbar = () => {
   const [showCategories, setShowCategories] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const location = useLocation();
+  console.log(location);
 
   // cart quantity
-    const selectedItem = useSelector((state) => state?.cart?.selectedItem);
+  const selectedItem = useSelector((state) => state?.cart?.selectedItem);
 
   // Add an event listener to track scroll events
   useEffect(() => {
@@ -50,12 +52,12 @@ const Navbar = () => {
     <header className=" ">
       <div>
         <div className="container flex items-center justify-between gap-1 md:gap-10 py-5">
-          {/* <h4 className="text-primary">WoWnex</h4> */}
-          <img
+          <h4 className="text-primary">Sellora</h4>
+          {/* <img
             className="h-10 md:h-14"
             src="https://revel-html.codebasket.xyz/assets/images/logo.png"
             alt="logo"
-          />
+          /> */}
           <div className="max-md:hidden max-w-2xl w-full">
             <Search />
           </div>
@@ -76,7 +78,6 @@ const Navbar = () => {
               </span>
             </Link>
           </div>
-        
         </div>
         <div className="md:hidden relative bg-white container z-10 py-3 transition-all ease-in-out">
           <Search scroll={scroll} />
@@ -87,20 +88,25 @@ const Navbar = () => {
       <div className="bg-white max-md:hidden">
         <div className="container w-full flex items-center gap-5 justify-between">
           <div className="max-w w-fit h-full relative">
-            
-          <div
-            onClick={() => setShowCategories(!showCategories)}
-            className="flex items-center justify-between gap-10 bg-primary text-white py-4 px-6">
-            <p className="text-lg font-semibold">All Departments</p>
-            <FiMenu className="text-xl"/>
-          </div>
-          <div
-            className={cn(
-              "w-full h-[530px] absolute duration-500 z-10 top-[60px]",
-              showCategories ? "left-0" : "-left-[1000px]"
-            )}>
-            <Categories />
-          </div>
+            <div
+              onClick={() => {
+                (location.pathname === "/" && window.scrollY >= 768) ||
+                  setShowCategories(!showCategories);
+              }}
+              className="flex items-center justify-between gap-10 bg-primary text-white py-4 px-6"
+            >
+              <p className="text-lg font-semibold">All Departments</p>
+              <FiMenu className="text-xl" />
+            </div>
+            <div
+              className={cn(
+                "w-full h-[530px] absolute duration-500 z-10 top-[60px]",
+                location.pathname === "/" && "hidden",
+                showCategories ? "left-0" : "-left-[1000px]"
+              )}
+            >
+              <Categories />
+            </div>
           </div>
 
           <div className="max-md:hidden py-5 flex items-center lg:gap-10 gap-4">

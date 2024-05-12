@@ -48,7 +48,7 @@ const ViewProduct = () => {
       {/* showing add to cart on top, after scroll */}
       <div
         className={cn(
-          " bg-ghost py-3 fixed left-0 right-0 z-10 duration-1000",
+          " bg-ghost py-3 fixed left-0 right-0 z-10 duration-700",
           showAddToCart ? "top-0" : "-top-96"
         )}
       >
@@ -57,14 +57,14 @@ const ViewProduct = () => {
             <h5 className="line-clamp-1 capitalize font-thin">
               {product?.title}
             </h5>
-            <Link to="#details" smooth className="text-blue-600">
+            <Link to="#details" smooth className="text-blue-600 hover:underline underline-offset-2">
               Details
             </Link>
           </div>
 
           <Button
             onClick={() => dispatch(addToCart(product))}
-            size="lg"
+            size=""
             variant="outline"
             className="flex w-fit justify-center items-center gap-2 md:text-xl "
           >

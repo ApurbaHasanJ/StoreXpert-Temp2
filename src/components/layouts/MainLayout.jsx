@@ -4,7 +4,7 @@ import Footer from "../shared/Footer";
 
 const MainLayout = () => {
   return (
-    <div className="bg-ghost font-rubik">
+    <div className="bg-ghost font-rubik select-none">
       <Navbar />
       <Outlet />
       <Footer />

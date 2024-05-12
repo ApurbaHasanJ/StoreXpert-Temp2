@@ -29,12 +29,13 @@ const Search = () => {
           placeholder="Search product here"
         />
         <Link
-          to={query ? `/products/${searchedProduct[0]?._id}` : "#"}
+          to={query ? `/view-product/${searchedProduct[0]?._id}` : "#"}
           onClick={() => setQuery("")}
           className={cn(
-            buttonVariants({size:"icon"}),
+            buttonVariants({ size: "icon" }),
             "p-3 md:p-4 bg-primary hover:bg-white border border-primary text-white hover:text-primary text-sm md:text-xl rounded-none"
-          )}>
+          )}
+        >
           <BsSearch />
           {/* <span className="max-lg:hidden">Search</span> */}
         </Link>
@@ -46,14 +47,16 @@ const Search = () => {
           !query && "hidden",
           searchedProduct?.length &&
             "grid md:grid-cols-2 grid-cols-1 gap-2 content-start"
-        )}>
+        )}
+      >
         {searchedProduct.length ? (
           searchedProduct?.map((product) => (
             <Link
               key={product?._id}
-              to={`/products/${product?._id}`}
+              to={`/view-product/${product?._id}`}
               onClick={() => setQuery("")}
-              className="flex items-center md:gap-6 gap-3 h-fit hover:bg-primary/10 rounded-md p-2">
+              className="flex items-center md:gap-6 gap-3 h-fit hover:bg-primary/10 rounded-md p-2"
+            >
               <SearchResult product={product} />
             </Link>
           ))

@@ -1,9 +1,10 @@
 import products from "../../public/products.json";
-import { Button } from "./ui/button";
+import { buttonVariants } from "./ui/button";
 import { FaCartPlus } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
 // import { Progress } from "./ui/progress";
 import { SectionHeader } from "./shared/SectionHeader";
+import { Link } from "react-router-dom";
 
 const HotProduct = () => {
   const product = products[10];
@@ -64,20 +65,26 @@ const HotProduct = () => {
           <p className="text-secondary mb-8">
             Hurry up!! Buy before the offer ends.
           </p>
-          <Button
+          <Link
+            to={`/view-product/${product?._id}`}
             size="lg"
-            className={cn("flex justify-center items-center gap-2")}
+            className={cn(
+              buttonVariants({ size: "lg" }),
+              "w-fit flex justify-center items-center gap-2"
+            )}
           >
             <FaCartPlus /> <span>Order Now</span>
-          </Button>
+          </Link>
         </div>
         {/* product img */}
         <div className="max-w-xs aspect-square bg-ghost border relative w-full overflow-hidden rounded-xl">
-          <img
-            className="scale-100 hover:scale-105 duration-300"
-            src={product?.images[0]}
-            alt={product?.title}
-          />
+          <Link to={`/view-product/${product?._id}`}>
+            <img
+              className="scale-100 hover:scale-105 duration-300"
+              src={product?.images[0]}
+              alt={product?.title}
+            />
+          </Link>
           <div className="absolute top-2 left-2 font-medium bg-primary text-ghost text-lg md:text-xl p-2 rounded-full">
             <p>{product?.disc}%</p>
           </div>

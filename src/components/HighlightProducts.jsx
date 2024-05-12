@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import products from "../../public/products.json";
 import { Button, buttonVariants } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const HighlightProducts = () => {
   const featuredProducts = products.slice(0, 3);
@@ -32,11 +33,11 @@ const HighlightProducts = () => {
             <p className="text-xl sm:text-2xl md:text-[28px] font-thin">
               Sale Up To <span className="font-medium">10%</span> Off
             </p>
-            <Button
+            <Link to={`/view-product/${product?._id}`}
               className={cn(buttonVariants({ variant: "outline" }), "mt-4")}
             >
               BUY NOW
-            </Button>
+            </Link>
           </div>
           <img
             className="w-24 md:w-28 aspect-square rounded-md"
