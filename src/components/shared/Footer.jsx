@@ -10,6 +10,10 @@ import { GiReturnArrow } from "react-icons/gi";
 import { TbBasketDiscount } from "react-icons/tb";
 import { BiSupport } from "react-icons/bi";
 import { cn } from "@/lib/utils";
+import { FaAngleRight } from "react-icons/fa6";
+import { HashLink as NavLink } from "react-router-hash-link";
+
+
 
 // navigate to other pages
 const pages = [
@@ -78,7 +82,13 @@ const Footer = () => {
   };
 
   return (
-    <footer>
+    <footer className="relative">
+      {/* navigate to the top */}
+      <NavLink to="#navigate-top" smooth className="bg-ghost hover:bg-ghost/80 p-1 md:p-2 max-md:text-sm rounded-full absolute bottom-5 sm:bottom-16 right-5 -rotate-90">
+      <FaAngleRight/>
+      </NavLink>
+
+      {/* footer container */}
       <div className="pt-16 container">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:items-center lg:justify-items-center -mb-14 px-6 drop-shadow-md bg-white md:gap-10 gap-5 py-10">
           {servcies?.map((servcie, index) => (

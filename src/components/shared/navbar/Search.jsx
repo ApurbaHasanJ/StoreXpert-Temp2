@@ -42,7 +42,7 @@ const Search = () => {
       </form>
       <div
         className={cn(
-          "container pt-5 bg-ghost rounded-b-lg shadow-md z-10 absolute pb-4 md:top-[83px] right-0 left-0 min-h-[450px] max-h-[500px] h-full overflow-y-scroll",
+          "container pt-5 bg-ghost rounded-b-lg shadow-md z-10 absolute pb-4 md:top-[130px] right-0 left-0 min-h-[450px] max-h-[500px] h-full overflow-y-scroll",
           scroll ? "top-[65.5px]" : "top-14",
           !query && "hidden",
           searchedProduct?.length &&

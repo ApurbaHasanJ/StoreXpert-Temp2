@@ -11,7 +11,7 @@ import freeDeliveryImg from "../../assets/others/free-delivery.png";
 import { useState } from "react";
 
 // sizes here for now...
-const sizes = ["M", "L", "XL", "2xl", "3xl"];
+const sizes = ["M", "L", "XL", "2xl"];
 
 // colors here for now...
 const colors = ["red", "green", "yellow", "blue"];
@@ -119,7 +119,7 @@ const ProductDetails = ({ product }) => {
       </div>
 
       {/* order and add to cart btn */}
-      <div className="flex items-center gap-2 mt-5 ">
+      <div className="flex max-lg:flex-col max-md:flex-row items-center gap-2 mt-5 ">
         <Link
           to="/checkout"
           onClick={() => handleAddToCart(product)}

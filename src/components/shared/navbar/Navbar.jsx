@@ -9,9 +9,11 @@ import { FiMenu } from "react-icons/fi";
 import { useSelector } from "react-redux";
 import AllDepartments from "@/components/AllDepartments";
 import { Button } from "@/components/ui/button";
+import { IoMdMenu } from "react-icons/io";
 
 const Navbar = () => {
-  const [showCategories, setShowCategories] = useState(false);
+  const [showDepartments, setShowDepartments] = useState(false);
+  const [showNavitems, setShowNavitems] = useState(false);
   const [scroll, setScroll] = useState(false);
   const location = useLocation();
 
@@ -56,12 +58,29 @@ const Navbar = () => {
       {/* 1st column */}
       <div>
         <div className="container flex items-center justify-between gap-1 md:gap-10 py-5">
-          <h4 className="text-primary">Sellora</h4>
+          <h4 className="text-primary max-md:hidden">Sellora</h4>
+          <div className="md:hidden flex items-center gap-3 relative">
+            <Button
+              size="icon"
+              variant="icon"
+              onClick={() => setShowNavitems(!showNavitems)}
+              className="bg-primary hover:bg-primary/70 text-white "
+            >
+              <IoMdMenu className="text-xl" />
+            </Button>
+            <h4 className="text-primary md:hidden">Sellora</h4>
+            {showNavitems && (
+              <div className="bg-white border-r-2 border-b-2 grid grid-cols-1 gap-3 p-5 absolute top-[52px] -left-4 z-[11]">
+                <NavItems />
+              </div>
+            )}
+          </div>
           {/* <img
             className="h-10 md:h-14"
             src="https://revel-html.codebasket.xyz/assets/images/logo.png"
             alt="logo"
           /> */}
+
           <div className="max-md:hidden max-w-2xl w-full ml-12">
             <Search />
           </div>
@@ -97,10 +116,10 @@ const Navbar = () => {
       >
         <div className="container w-full flex items-center gap-5 justify-between">
           <div className="max-w w-fit h-full relative">
+            
             <div
               onClick={() => {
-                (location.pathname === "/" && window.scrollY >= 768) ||
-                  setShowCategories(!showCategories);
+                window.scrollY >= 768 || setShowDepartments(!showDepartments);
               }}
               className="flex items-center justify-between gap-10 bg-primary text-white py-4 px-6"
             >
@@ -113,14 +132,18 @@ const Navbar = () => {
                 <FiMenu className="text-xl" />
               </Button>
             </div>
+
+            {/* departments or categories */}
             <div
               className={cn(
-                "w-full h-[530px] absolute duration-500 z-10 top-[60px]",
-                location.pathname === "/" && "hidden",
-                showCategories ? "left-0" : "-left-[1000px]"
+                "w-full h-[530px] absolute duration-1000 z-10 left-0 top-[67px]",
+
+                location.pathname === "/" && "lg:hidden",
+
+                showDepartments ? "block" : "hidden"
               )}
             >
-              <AllDepartments setShowCategories={setShowCategories} />
+              <AllDepartments setShowDepartments={setShowDepartments} />
             </div>
           </div>
 

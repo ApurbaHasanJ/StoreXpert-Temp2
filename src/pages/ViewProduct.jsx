@@ -88,7 +88,7 @@ const ViewProduct = () => {
         {/* about product */}
         <div className="flex max-lg:flex-col items-center max-sm:justify-items-center gap-6">
           {/* product view IMG */}
-          <div className="flex max-sm:flex-col max-sm:items-center max-sm:justify-items-center gap-6 w-full">
+          <div className="flex max-md:flex-col max-md:items-center max-md:justify-items-center gap-6 w-full">
             <ProductViewImg
               product={product}
               viewImg={viewImg}
