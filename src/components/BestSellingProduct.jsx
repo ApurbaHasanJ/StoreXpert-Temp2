@@ -14,40 +14,40 @@ const BestSellingProduct = () => {
   return (
     <div className="bg-white">
       <Carousel
-        orientation="vertical | horizontal"
-        className="w-72 h-[530px]"
         opts={{
           align: "start",
           loop: true,
         }}
+        orientation="vertical"
         plugins={[
           Autoplay({
             delay: 5000,
           }),
         ]}
+        className="w-72 relative"
       >
         <div className="bg-primary/5 p-4 flex items-center justify-between">
           <p className=" text-primary">BEST SELLING</p>
-          <div className="bg-red-400 flex items-center w-20 justify-end relative">
+          <div className="mr-7 flex items-center place-content-center gap-2 justify-center relative">
             <CarouselNext className="rounded-none" />
             <CarouselPrevious className="rounded-none" />
           </div>
         </div>
-        <CarouselContent className="p-2 ">
+        <CarouselContent className="p-2 my-[3px] h-[474px]">
           {products.map((product) => (
             <CarouselItem key={product?._id} className="basis-1/4">
               <Link to={`/view-product/${product?._id}`}>
                 <Card>
-                  <CardContent className="flex items-center justify-between gap-2">
+                  <CardContent className="flex items-center gap-2">
                     <img
                       className="w-24 aspect-square object-cover rounded-lg"
                       src={product?.images[0]}
                       alt=""
                     />
                     <div>
-                      <p className="line-clamp-2">{product?.title}</p>
+                      <p className="line-clamp-2 capitalize">{product?.title}</p>
                       <div className="flex items-center gap-3 mb-3">
-                        <p className="text-primary font-me text-lg md:text-xl">
+                        <p className="text-primary md:text-lg">
                           ৳{" "}
                           {product?.disc
                             ? Math.floor(

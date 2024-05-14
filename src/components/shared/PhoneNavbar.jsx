@@ -31,31 +31,35 @@ const PhoneNavbar = () => {
           {/* home */}
           <NavLink
             to="/"
-            className="flex flex-col gap-1 items-center capitalize w-fit">
+            className="hover:text-ghost/80 flex flex-col gap-1 items-center capitalize w-fit"
+          >
             <GoHome className="text-lg" />
             <span className="text-xs">home</span>
           </NavLink>
           {/* menu */}
           <div
             onClick={() => setShowMenu(!showMenu)}
-            className="flex flex-col gap-1 items-center capitalize w-fit">
+            className="hover:text-ghost/80 flex flex-col gap-1 items-center capitalize w-fit"
+          >
             <RxDashboard className="text-lg" />
             <span className="text-xs">categories</span>
           </div>
           {/* call */}
           <div
             onClick={handleCallClick}
-            className="flex flex-col gap-1 items-center capitalize w-fit">
+            className="hover:text-ghost/80 flex flex-col gap-1 items-center capitalize w-fit"
+          >
             <BsTelephone className="text-lg" />
             <span className="text-xs">call</span>
           </div>
           {/* cart */}
           <Link
             to="/cart"
-            className="flex relative flex-col gap-1 items-center capitalize w-fit">
+            className="hover:text-ghost/80 flex relative flex-col gap-1 items-center capitalize w-fit"
+          >
             <SlHandbag className="text-lg" />
             <span className="text-xs">cart</span>
-            <span className="text-primary text-sm rounded-full h-5 w-5 text-center bg-white absolute -right-2 -top-2">
+            <span className="text-primary text-sm rounded-full h-5 w-5 text-center bg-ghost absolute -right-2 -top-2">
               {selectedItem}
             </span>
           </Link>
@@ -68,9 +72,10 @@ const PhoneNavbar = () => {
           className={cn(
             "md:hidden fixed transition-transform duration-1000 bg-slate-900/20 top-0 bottom-0 z-10",
             showMenu ? "left-0 right-0" : "-left-[1000px]"
-          )}>
+          )}
+        >
           <div className="h-full max-w-[290px] w-full">
-            <AllDepartments phone="Sellora"/>
+            <AllDepartments phone="Sellora" />
           </div>
         </div>
       )}

@@ -150,15 +150,15 @@ CarouselItem.displayName = "CarouselItem"
 
 const CarouselPrevious = React.forwardRef(({ className, variant = "outline", size = "icon", ...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel()
-
+  // -bottom-12 left-1/2 -translate-x-1/2 rotate-90
   return (
     (<Button
       ref={ref}
       variant={variant}
       size={size}
-      className={cn("absolute rounded-none border-slate-300 hover:text-primary hover:bg-ghost duration-500 md:h-12 w-6 text-white bg-secondary bg-opacity-30", orientation === "horizontal"
+      className={cn("absolute rounded-none border-slate-300 hover:text-primary duration-500 h-6 w-6 text-white bg-secondary/20 hover:bg-ghost", orientation === "horizontal"
         ? "left-1 top-1/2 -translate-y-1/2"
-        : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className)}
+        : "left-1 top-1/2 -translate-y-1/2 rotate-90", className)}
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}>
@@ -172,14 +172,15 @@ CarouselPrevious.displayName = "CarouselPrevious"
 const CarouselNext = React.forwardRef(({ className, variant = "outline", size = "icon", ...props }, ref) => {
   const { orientation, scrollNext, canScrollNext } = useCarousel()
 
+  // -bottom-12 left-1/2 -translate-x-1/2 rotate-90
   return (
     (<Button
       ref={ref}
       variant={variant}
       size={size}
-      className={cn("absolute rounded-none border-slate-300 hover:text-primary hover:bg-ghost duration-500 md:h-12 w-6 text-white bg-secondary bg-opacity-30", orientation === "horizontal"
+      className={cn("absolute rounded-none border-slate-300 hover:text-primary duration-500 h-6 w-6 text-white bg-secondary/20 hover:bg-ghost", orientation === "horizontal"
         ? "right-1 top-1/2 -translate-y-1/2"
-        : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className)}
+        : "right-1 top-1/2 -translate-y-1/2 rotate-90", className)}
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}>
