@@ -8,7 +8,7 @@ const FlashDeal = () => {
 
     return (
       <section id="flash-deal" className="mt-12 bg-white py-10 px-6 shadow">
-        <SectionHeader title="Flash Deal"/>
+        <SectionHeader title="Flash Deal" category={memoizedProducts[0]?.category}/>
         <ProductCards products={memoizedProducts}/>
       </section>
     )

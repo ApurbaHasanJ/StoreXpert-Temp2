@@ -14,8 +14,8 @@ const BestSellingProduct = () => {
   return (
     <div className="bg-white">
       <Carousel
-        orientation="vertical"
-        className="w-72"
+        orientation="vertical | horizontal"
+        className="w-72 h-[530px]"
         opts={{
           align: "start",
           loop: true,
@@ -26,16 +26,16 @@ const BestSellingProduct = () => {
           }),
         ]}
       >
-        <div className="bg-primary/5 p-4  flex items-center justify-between">
+        <div className="bg-primary/5 p-4 flex items-center justify-between">
           <p className=" text-primary">BEST SELLING</p>
           <div className="bg-red-400 flex items-center w-20 justify-end relative">
             <CarouselNext className="rounded-none" />
             <CarouselPrevious className="rounded-none" />
           </div>
         </div>
-        <CarouselContent className="px-2">
+        <CarouselContent className="p-2 ">
           {products.map((product) => (
-            <CarouselItem key={product?._id}>
+            <CarouselItem key={product?._id} className="basis-1/4">
               <Link to={`/view-product/${product?._id}`}>
                 <Card>
                   <CardContent className="flex items-center justify-between gap-2">

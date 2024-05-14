@@ -13,7 +13,7 @@ const HotProduct = () => {
 
   return (
     <section id="hot-product" className="mt-12 bg-white py-10 px-6 shadow">
-      <SectionHeader title="Hot Deal This Week" />
+      <SectionHeader title="Hot Deal This Week" category={product?.category}/>
       {/* card content */}
       <div className="mt-9 flex max-md:flex-col-reverse md:items-center justify-between gap-6">
         {/* desc */}

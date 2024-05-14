@@ -22,7 +22,7 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
         <input
           type="text"
           id="name"
-          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full rounded-md"
+          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full"
           placeholder="এখানে আপনার নাম লিখুন"
           {...register("name", {
             required: "দয়া করে আপনার নাম লিখুন",
@@ -40,14 +40,14 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
           আপনার মোবাইল নম্বর
           <span className="text-red-500 text-xl">*</span>
         </label>
-        <div className=" border border-secondary/40 drop-shadow-sm flex items-center rounded-md">
+        <div className=" border border-secondary/40 drop-shadow-sm flex items-center">
           <div className="text-secondary/60 p-2 border-r border-secondary/40">
             +88
           </div>
           <input
             type="tel"
             id="phone"
-            className="focus:outline-none w-full p-2 rounded-md"
+            className="focus:outline-none w-full p-2"
             placeholder="এখানে আপনার মোবাইল নম্বর লিখুন"
             {...register("phone", {
               required: "দয়া করে মোবাইল নম্বর লিখুন",
@@ -77,7 +77,7 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
         <input
           type="text"
           id="address"
-          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full rounded-md"
+          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full"
           placeholder="এখানে আপনার সম্পূর্ণ ঠিকানা লিখুন"
           {...register("address", {
             required: "দয়া করে আপনার ঠিকানা লিখুন",
@@ -104,7 +104,7 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
               id="deliveryAreaWithinDhaka"
               name="deliveryArea"
               value="withinDhaka"
-              className="mr-2 border accent-primary border-secondary/40 drop-shadow-sm rounded-md"
+              className="mr-2 border accent-primary border-secondary/40 drop-shadow-sm"
               {...register("deliveryArea", {
                 required: "দয়া করে ডেলিভারি এলাকা নির্বাচন করুন",
               })}
@@ -123,7 +123,7 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
               id="deliveryAreaOutsideDhaka"
               name="deliveryArea"
               value="outsideDhaka"
-              className="mr-2 border accent-primary border-secondary/40 drop-shadow-sm rounded-md"
+              className="mr-2 border accent-primary border-secondary/40 drop-shadow-sm"
               {...register("deliveryArea", {
                 required: "দয়া করে ডেলিভারি এলাকা নির্বাচন করুন",
               })}
@@ -152,7 +152,7 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
         <input
           type="text"
           id="discountCode"
-          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full rounded-md"
+          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full"
           placeholder="এখানে আপনার ডিসকাউন্ট কুপন লিখুন"
           {...register("discountCode")}
         />

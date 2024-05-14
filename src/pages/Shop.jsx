@@ -15,7 +15,7 @@ export const Shop = () => {
     params?.id === "new-arrivals"
       ? products
       : products.filter((product) => product?.category === params?.id);
-  console.log(filteredProducts);
+
   return (
     <section className="container">
       <PageHeader props={`shop / ${params?.id}`} />
@@ -34,9 +34,10 @@ export const Shop = () => {
           </>
         ) : (
           <>
-            <h6 className="font-thin pt-5 text-secondary text-right">
-              {filteredProducts?.length} Products Found
-            </h6>
+            <div className="font-thin pt-5 text-secondary text-right flex items-center justify-between capitalize">
+              <h6>{params?.id}</h6>
+              <h6>{filteredProducts?.length} Products Found</h6>
+            </div>
             <ProductCards products={filteredProducts} />
           </>
         )}

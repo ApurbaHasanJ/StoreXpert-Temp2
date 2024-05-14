@@ -8,7 +8,7 @@ const FeaturedProducts = () => {
 
   return (
     <section className="mt-12 bg-white py-10 px-6 shadow">
-      <SectionHeader title="Featured Products"/>
+      <SectionHeader title="Featured Products" category={memoizedProducts[1]?.category}/>
       <ProductCards products={memoizedProducts}/>
     </section>
   );

@@ -92,7 +92,7 @@ const Navbar = () => {
       <div
         className={cn(
           "max-md:hidden",
-          viewProduct === "view-product" ? "bg-ghost/30 drop-shadow-sm" : "bg-white"
+          viewProduct === "view-product" ? "bg-ghost" : "bg-white"
         )}
       >
         <div className="container w-full flex items-center gap-5 justify-between">
@@ -105,7 +105,13 @@ const Navbar = () => {
               className="flex items-center justify-between gap-10 bg-primary text-white py-4 px-6"
             >
               <p className="text-lg font-semibold">All Departments</p>
-              <FiMenu className="text-xl" />
+              <Button
+                size="icon"
+                variant="icon"
+                className="text-white hover:bg-gray-50/20"
+              >
+                <FiMenu className="text-xl" />
+              </Button>
             </div>
             <div
               className={cn(

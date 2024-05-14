@@ -1,12 +1,11 @@
 import products from "../../../public/products.json";
-import { useEffect, useMemo, useState } from "react";
-import { Button } from "../ui/button";
+import { useEffect, useState } from "react";
 import ProductCards from "../shared/ProductCards";
 import { SectionHeader } from "../shared/SectionHeader";
 
 const RelatedProducts = ({ category }) => {
   const [relatedProducts, setRelatedProducts] = useState([]);
-  const [showAll, setShowAll] = useState(false);
+  // const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     const filteredProduct = products.filter(
@@ -16,13 +15,11 @@ const RelatedProducts = ({ category }) => {
   }, [category]);
 
   // Memoize the sliced array of products based on the showAll state
-  const displayedProducts = useMemo(() => {
-    return showAll ? relatedProducts : relatedProducts.slice(0, 4);
-  }, [relatedProducts, showAll]);
+  const displayedProducts = relatedProducts.slice(0, 4);
 
   return (
     <section className="mt-12 bg-ghost/30 my-10 py-10 px-6 shadow">
-      <SectionHeader title="Related Products" />
+      <SectionHeader title="Related Products" category={displayedProducts[0]?.category}/>
 
       {/* <Button
           disabled={products.length == 5 || showAll}
@@ -33,7 +30,7 @@ const RelatedProducts = ({ category }) => {
           View All
         </Button> */}
 
-      <ProductCards products={displayedProducts} />
+      <ProductCards products={displayedProducts}/>
     </section>
   );
 };

@@ -8,7 +8,7 @@ const Headline = () => {
         WoWnex বাংলাদেশের বিশ্বস্ত অনলাইন শপ সারাদেশে ক্যাশ অন ডেলিভারি (৪৮ থেকে
         ৭২ ঘণ্টার মধ্যে) হটলাইন: 01710696950 &nbsp; &nbsp; &nbsp;
       </Marquee>
-      <div className="flex items-center whitespace-nowrap gap-4 px-4 text drop-shadow-lg">
+      <div className="flex items-center whitespace-nowrap gap-4 text-primary px-4 text drop-shadow-lg">
         <Link to="#" className="hover:underline underline-offset-2">
           FB Page
         </Link>

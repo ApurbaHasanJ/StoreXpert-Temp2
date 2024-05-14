@@ -1,4 +1,4 @@
-import AdvertiseCards from "@/components/AdvertiseCards"
+import AdvertiseCards from "@/components/SubHero"
 import { AllProducts } from "@/components/AllProducts"
 import DirectCatLinks from "@/components/DirectCatLinks"
 import FeaturedProducts from "@/components/FeaturedProducts"

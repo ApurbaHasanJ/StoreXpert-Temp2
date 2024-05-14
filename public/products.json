@@ -14,6 +14,7 @@
     "inStock": 40,
     "category": "girls-fashion",
     "sub_category": "bags",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -33,6 +34,7 @@
     "inStock": 20,
     "category": "girls-fashion",
     "sub_category": "bags",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -50,6 +52,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -68,6 +71,7 @@
     "inStock": 20,
     "category": "accessories",
     "sub_category": "glasses",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -86,6 +90,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "t-shirts",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -104,6 +109,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "shoes",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -121,6 +127,7 @@
     "inStock": 50,
     "category": "accessories",
     "sub_category": "watches",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -146,6 +153,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "shoes",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -164,6 +172,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "t-shirts",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -182,6 +191,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -202,6 +212,7 @@
     "inStock": 20,
     "category": "girls-fashion",
     "sub_category": "bags",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -223,6 +234,7 @@
     "inStock": 20,
     "category": "girls-fashion",
     "sub_category": "bags",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -244,6 +256,7 @@
     "inStock": 20,
     "category": "girls-fashion",
     "sub_category": "bags",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -263,6 +276,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "glasses",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -283,6 +297,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "glasses",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -302,6 +317,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "glasses",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -323,6 +339,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "glasses",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -345,6 +362,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "glasses",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -368,6 +386,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "glasses",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -392,6 +411,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "glasses",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -410,6 +430,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -429,6 +450,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -449,6 +471,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -469,6 +492,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -490,6 +514,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -508,6 +533,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "shoes",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -526,6 +552,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "shoes",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -545,6 +572,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "shoes",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -565,6 +593,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "shoes",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -586,6 +615,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "shoes",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -608,6 +638,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "shoes",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -631,6 +662,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "shoes",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -649,6 +681,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "t-shirts",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -668,6 +701,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "t-shirts",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -688,6 +722,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "t-shirts",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -709,6 +744,7 @@
     "inStock": 20,
     "category": "mens-fashion",
     "sub_category": "t-shirts",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -728,6 +764,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -747,6 +784,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -767,6 +805,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -786,6 +825,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -806,6 +846,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -826,6 +867,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -846,6 +888,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -867,6 +910,7 @@
     "inStock": 50,
     "category": "mens-fashion",
     "sub_category": "accessories",
+    "short_desc": "1. Product Name: XYZ Widget\n2. Description: High-quality XYZ Widget for everyday use.\n3. Available Colors: Red, Blue, Green\n4. Dimensions: 10cm x 5cm x 3cm\n5. Additional Info: Made with durable materials.",
     "product_details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "delivery_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "return_refund_policy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."

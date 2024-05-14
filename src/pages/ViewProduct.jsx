@@ -2,8 +2,7 @@ import { cn } from "@/lib/utils";
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { FaCartPlus } from "react-icons/fa6";
-import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import products from "../../public/products.json";
 import { addToCart } from "@/redux/slices/cart/cart";
 import PageHeader from "@/components/shared/PageHeader";
@@ -15,22 +14,22 @@ import ProductDetails from "@/components/viewProduct/ProductDetails";
 import RelatedProducts from "@/components/viewProduct/RelatedProducts";
 
 const ViewProduct = () => {
-  const param = useParams();
+  const params = useParams();
   const dispatch = useDispatch();
   const [product, setProduct] = useState();
   const [viewImg, setViewImg] = useState("");
-  const [showAddToCart, setShowAddToCart] = useState(false);
+  const [show, setShow] = useState(false);
 
   // setting default view img
   useEffect(() => {
     window.scrollTo({ top: 0 });
-    setProduct(products?.find((product) => product._id == param.id));
+    setProduct(products?.find((product) => product._id == params.id));
     setViewImg(product?.images[0]);
-  }, [param.id, product?.images]);
+  }, [params.id, product?.images]);
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowAddToCart(window.scrollY > 600 ? true : false);
+      setShow(window.scrollY > 600 ? true : false);
     };
     window.addEventListener("scroll", handleScroll);
 
@@ -43,13 +42,13 @@ const ViewProduct = () => {
   return (
     <section className="bg-white pb-10">
       {/* page route */}
-      {/* <PageHeader props="View Product" /> */}
+      <PageHeader props={`view-product / ${product?.product_id}`} />
 
       {/* showing add to cart on top, after scroll */}
       <div
         className={cn(
           " bg-ghost py-3 fixed left-0 right-0 z-10 duration-700",
-          showAddToCart ? "top-0" : "-top-96"
+          show ? "top-0" : "-top-96"
         )}
       >
         <div className="container flex items-center justify-between gap-10 md:gap-20">
@@ -66,14 +65,16 @@ const ViewProduct = () => {
             </Link>
           </div>
 
-          <Button
+          <Link
+            to="/checkout"
             onClick={() => dispatch(addToCart(product))}
-            size=""
-            variant="outline"
-            className="flex w-fit justify-center items-center gap-2 md:text-xl "
+            className={cn(
+              buttonVariants({ variant: "outline" }),
+              "flex w-fit justify-center items-center gap-2 md:text-lg"
+            )}
           >
-            <FaCartPlus /> <span>Add to Cart</span>
-          </Button>
+            Order Now
+          </Link>
         </div>
       </div>
 
@@ -82,9 +83,10 @@ const ViewProduct = () => {
         {product?.title}
       </h5>
 
+      {/* full product container*/}
       <div className="container">
         {/* about product */}
-        <div className="flex max-lg:flex-col items-center max-sm:justify-items-center gap-6 mb-10 md:mb-16">
+        <div className="flex max-lg:flex-col items-center max-sm:justify-items-center gap-6">
           {/* product view IMG */}
           <div className="flex max-sm:flex-col max-sm:items-center max-sm:justify-items-center gap-6 w-full">
             <ProductViewImg

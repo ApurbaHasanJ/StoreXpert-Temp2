@@ -58,8 +58,8 @@ const Cart = ({ deliveryCharge }) => {
     <section
       className={location?.pathname === "/cart" ? "mt-8 mb-16 container" : ""}
     >
-      <div className="bg-white border-t border-ghost select-none shadow-md rounded-xl md:p-5 p-2">
-        <p className="text-center bg-ghost text-secondary md:text-2xl text-xl font-semibold rounded-md p-3">
+      <div className="bg-white border-t border-ghost select-none shadow-md md:p-5 p-2">
+        <p className="text-center bg-ghost text-secondary md:text-2xl text-xl font-semibold p-3">
           আপনার অর্ডার
         </p>
 
@@ -85,7 +85,7 @@ const Cart = ({ deliveryCharge }) => {
 
         {/* show cart in a table if available */}
         <div className={cn(!carts.length && "hidden")}>
-          <div className="mt-5 border border-secondary/30 rounded-lg">
+          <div className="mt-5 border border-secondary/30 ">
             <Table className="">
               <TableHeader>
                 <TableRow>
@@ -100,14 +100,14 @@ const Cart = ({ deliveryCharge }) => {
                 {carts?.map((cart, i) => (
                   <TableRow key={i}>
                     <TableCell className="font-medium flex items-center gap-3">
-                      <div>
+                      <div className="p-1 text-red-500 hover:text-red-600">
                         <MdDeleteForever
                           onClick={() => handleRemoveFromCart(cart?._id)}
-                          className="text-xl md:text-2xl text-red-600"
+                          className="text-xl md:text-2xl"
                         />
                       </div>
                       <img
-                        className="w-20 aspect-square bg-ghost rounded-lg"
+                        className="w-20 aspect-square bg-ghost "
                         src={cart?.images[0]}
                         alt={"item" + i + 1}
                       />
@@ -146,7 +146,7 @@ const Cart = ({ deliveryCharge }) => {
             </Table>
           </div>
           {/* display total amount */}
-          <div className="rounded-lg shadow-sm text-secondary border p-2 my-5 w-fit text-right font-medium ml-auto">
+          <div className="shadow-sm text-secondary border p-2 my-5 w-fit text-right font-medium ml-auto">
             <Table>
               <TableBody>
                 <TableRow>
@@ -187,7 +187,7 @@ const Cart = ({ deliveryCharge }) => {
           </div>
 
           <div className="text-center">
-            <div className="mt-5 px-7 py-3 border-2 border-secondary/40 border-dashed text-secondary/80 rounded-lg">
+            <div className="mt-5 px-7 py-3 border-2 border-secondary/40 border-dashed text-secondary/80 ">
               <p className="md:text-xl font-medium">
                 পণ্য সম্পর্কে জানতে আমাদের কল করুনঃ
               </p>

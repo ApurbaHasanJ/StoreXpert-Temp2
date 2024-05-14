@@ -7,7 +7,7 @@ export const AllProducts = () => {
 
   return (
     <section className="mt-12 bg-white py-10 px-6 shadow">
-      <SectionHeader title="Products" />
+      <SectionHeader title="All Products" category={memoizedProducts[0]?.category}/>
       <ProductCards products={memoizedProducts} />
     </section>
   );
