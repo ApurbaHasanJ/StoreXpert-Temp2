@@ -77,7 +77,7 @@ const HotProduct = () => {
           </Link>
         </div>
         {/* product img */}
-        <div className="max-w-xs aspect-square bg-ghost border relative w-full overflow-hidden rounded-xl">
+        <div className="md:max-w-xs max-md:mx-auto aspect-square bg-ghost border relative w-full overflow-hidden rounded-xl">
           <Link to={`/view-product/${product?._id}`}>
             <img
               className="scale-100 hover:scale-105 duration-300"

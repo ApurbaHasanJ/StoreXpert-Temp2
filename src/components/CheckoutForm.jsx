@@ -154,7 +154,7 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
           id="discountCode"
           className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full rounded-md"
           placeholder="এখানে আপনার ডিসকাউন্ট কুপন লিখুন"
-          {...register("discountCode", )}
+          {...register("discountCode")}
         />
       </div>
       {errors.discountCode && (
@@ -165,9 +165,6 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
       <Button type="submit" size="lg" className="w-full font-semibold">
         অর্ডার কনফার্ম করুন
       </Button>
-      <p className="text-sm text-slate-500 text-center mt-2">
-        ১০০% সিউর হয়ে অর্ডার করুন, অহেতুক অর্ডার করবেন না
-      </p>
     </form>
   );
 };

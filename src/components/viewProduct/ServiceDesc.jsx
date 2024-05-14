@@ -5,7 +5,7 @@ import { RiCustomerService2Line } from "react-icons/ri";
 
 const ServiceDesc = () => {
   return (
-    <div className="bg-primary/5 max-lg:mt-9 p-5 text-sm border drop-shadow-sm lg:max-w-72 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 lg:gap-2 gap-8 justify-between">
+    <div className="bg-ghost/30 max-lg:mt-9 p-5 text-sm border drop-shadow-sm lg:max-w-72 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 lg:gap-2 gap-8 justify-between">
       <div className="flex gap-2 items-start w-full">
         <GoRocket className="text-2xl mt-1 text-purple-700" />{" "}
         <div className="w-full">

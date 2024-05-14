@@ -43,7 +43,7 @@ const ProductCards = ({ products }) => {
             {/* show view and cart button */}
             <div
               className={cn(
-                "w-full absolute left-0 duration-500 bg-gray-300",
+                "w-full absolute left-0 duration-500 bg-ghost",
                 hoverProduct === product?._id ? "bottom-0" : "-bottom-32"
               )}
             >
@@ -67,14 +67,13 @@ const ProductCards = ({ products }) => {
             </div>
           </div>
 
-          <Link
-            to={`/view-product/${product?._id}`}
-            className="text-sm md:text-base font-thin mt-3 mx-2 text-center capitalize line-clamp-1 text-black hover:text-primary duration-500"
-          >
-            {product?.title}
-          </Link>
-
-          <div className="">
+          <div className="bg-white">
+            <Link
+              to={`/view-product/${product?._id}`}
+              className="text-sm md:text-base font-thin mt-3 mx-2 text-center capitalize line-clamp-1 text-black hover:text-primary duration-500"
+            >
+              {product?.title}
+            </Link>
             <div className="mt-3 font-thin flex items-center justify-center gap-3 mb-3">
               <s
                 className={cn(

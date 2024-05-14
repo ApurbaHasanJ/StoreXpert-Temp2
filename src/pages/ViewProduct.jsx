@@ -43,7 +43,7 @@ const ViewProduct = () => {
   return (
     <section className="bg-white pb-10">
       {/* page route */}
-      <PageHeader props="View Product" />
+      {/* <PageHeader props="View Product" /> */}
 
       {/* showing add to cart on top, after scroll */}
       <div
@@ -57,7 +57,11 @@ const ViewProduct = () => {
             <h5 className="line-clamp-1 capitalize font-thin">
               {product?.title}
             </h5>
-            <Link to="#details" smooth className="text-blue-600 hover:underline underline-offset-2">
+            <Link
+              to="#details"
+              smooth
+              className="text-blue-600 hover:underline underline-offset-2"
+            >
               Details
             </Link>
           </div>

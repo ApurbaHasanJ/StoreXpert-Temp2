@@ -1,12 +1,10 @@
-import Categories from "./AllDepartments";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  // CarouselNext,
-  // CarouselPrevious,
 } from "@/components/ui/carousel";
+import AllDepartments from "./AllDepartments";
 import Autoplay from "embla-carousel-autoplay";
 import hero1 from "/src/assets/hero/hero1.jpg";
 import hero2 from "/src/assets/hero/hero2.jpg";
@@ -32,7 +30,7 @@ const Hero = () => {
   return (
     <div className="h-[530px] overflow-hidden flex gap-5 mt-5">
       <div className="max-lg:hidden ">
-        <Categories />
+        <AllDepartments />
       </div>
 
       <Carousel

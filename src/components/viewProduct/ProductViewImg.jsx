@@ -10,20 +10,20 @@ const ProductViewImg = ({ setViewImg, viewImg, product }) => {
   return (
     <div className="max-w-[430px] md:max-h-[430px] md:h-full h-fit w-full mx-auto">
       {/* display selected img */}
-      <div className=" bg-ghost border relative rounded-xl overflow-hidden">
+      <div className=" bg-ghost border relative overflow-hidden">
         <img
           className="max-w-[430px] max-h-[430px] h-full w-full aspect-square"
           src={viewImg}
           alt={product?.title}
         />
-        <span
+        <div
           className={cn(
-            "bg-primary text-ghost absolute top-2 right-2 px-2 text-sm",
+            "bg-primary text-ghost text-xs absolute top-1 left-1 w-8 h-8 rounded-full",
             product?.disc ? "block" : "hidden"
           )}
         >
-          -{product?.disc}&#37;
-        </span>
+          <p className="p-2 px-1">{product?.disc}&#37;</p>
+        </div>
       </div>
       {/* all images for view images */}
       <Carousel>
@@ -33,7 +33,7 @@ const ProductViewImg = ({ setViewImg, viewImg, product }) => {
               key={i}
               onClick={() => setViewImg(img)}
               className={cn(
-                "border-2 basis-auto border-secondary/20 p-0 w-20 h-20 bg-ghost/60 rounded-lg overflow-hidden",
+                "border-2 basis-auto border-secondary/20 p-0 w-20 h-20 bg-ghost/60 overflow-hidden",
                 viewImg == img ? "border-primary/40" : "border-secondary/20"
               )}
             >

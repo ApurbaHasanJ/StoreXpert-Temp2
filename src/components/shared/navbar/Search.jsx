@@ -32,8 +32,8 @@ const Search = () => {
           to={query ? `/view-product/${searchedProduct[0]?._id}` : "#"}
           onClick={() => setQuery("")}
           className={cn(
-            buttonVariants({ size: "icon" }),
-            "p-3 md:p-4 bg-primary hover:bg-white border border-primary text-white hover:text-primary text-sm md:text-xl rounded-none"
+            buttonVariants({ variant: "icon", size: "icon" }),
+            "max-sm:p-[11px] md:p-4 bg-primary hover:bg-white text-white hover:text-secondary border border-primary  text-sm md:text-xl"
           )}
         >
           <BsSearch />

@@ -21,6 +21,7 @@ export default {
         primary: "#fe5502",
         secondary: "#475569",
         ghost: "#eaf1f5",
+        destructive: "#f4f5f5"
       },
       fontFamily: {
         'rubik': ['Rubik', 'sans-serif'],

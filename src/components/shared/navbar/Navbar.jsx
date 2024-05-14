@@ -4,16 +4,19 @@ import { Link, useLocation } from "react-router-dom";
 import NavItems from "./NavItems";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
-import Categories from "@/components/AllDepartments";
 import Search from "./Search";
 import { FiMenu } from "react-icons/fi";
 import { useSelector } from "react-redux";
+import AllDepartments from "@/components/AllDepartments";
+import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [showCategories, setShowCategories] = useState(false);
   const [scroll, setScroll] = useState(false);
   const location = useLocation();
-  console.log(location);
+
+  const viewProduct = location.pathname.split("/")[1];
+  console.log(viewProduct);
 
   // cart quantity
   const selectedItem = useSelector((state) => state?.cart?.selectedItem);
@@ -49,7 +52,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className=" ">
+    <header className={cn(viewProduct === "view-product" && "bg-white")}>
+      {/* 1st column */}
       <div>
         <div className="container flex items-center justify-between gap-1 md:gap-10 py-5">
           <h4 className="text-primary">Sellora</h4>
@@ -58,7 +62,7 @@ const Navbar = () => {
             src="https://revel-html.codebasket.xyz/assets/images/logo.png"
             alt="logo"
           /> */}
-          <div className="max-md:hidden max-w-2xl w-full">
+          <div className="max-md:hidden max-w-2xl w-full ml-12">
             <Search />
           </div>
           <div className="flex items-center gap-5">
@@ -85,7 +89,12 @@ const Navbar = () => {
       </div>
 
       {/* 2nd column */}
-      <div className="bg-white max-md:hidden">
+      <div
+        className={cn(
+          "max-md:hidden",
+          viewProduct === "view-product" ? "bg-ghost/30 drop-shadow-sm" : "bg-white"
+        )}
+      >
         <div className="container w-full flex items-center gap-5 justify-between">
           <div className="max-w w-fit h-full relative">
             <div
@@ -105,7 +114,7 @@ const Navbar = () => {
                 showCategories ? "left-0" : "-left-[1000px]"
               )}
             >
-              <Categories />
+              <AllDepartments setShowCategories={setShowCategories} />
             </div>
           </div>
 

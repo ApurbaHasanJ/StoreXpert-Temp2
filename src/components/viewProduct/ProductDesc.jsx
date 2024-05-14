@@ -8,10 +8,10 @@ const ProductDesc = ({ product }) => {
         <TabsList>
           <TabsTrigger value="product-details">Product Details</TabsTrigger>
           <TabsTrigger value="delivery-information">
-            Delivery Information
+            Delivery Info
           </TabsTrigger>
           <TabsTrigger value="return-and-refund-policy">
-            Return & Refund Policy
+            Return Policy
           </TabsTrigger>
         </TabsList>
         <TabsContent value="product-details">

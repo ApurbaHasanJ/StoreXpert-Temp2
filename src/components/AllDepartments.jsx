@@ -68,7 +68,7 @@ const departments = [
   },
 ];
 
-const AllDepartments = ({ name }) => {
+const AllDepartments = ({ name, setShowCategories }) => {
   return (
     <div className="bg-white shadow-md p-2 pb-6 h-full pr-6 overflow-y-scroll max-md:text-sm">
       {name && <h4 className="text-primary mb-8">WoWnex</h4>}
@@ -76,6 +76,7 @@ const AllDepartments = ({ name }) => {
         <Link
           key={index}
           to={`/shop/${department?.category}`}
+          onClick={() => setShowCategories(false)}
           className="flex items-center gap-2 whitespace-nowrap mt-4 text-secondary hover:text-primary"
         >
           <FaCaretRight /> <span>{department.item}</span>
