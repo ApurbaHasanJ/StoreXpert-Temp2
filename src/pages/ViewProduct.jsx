@@ -29,7 +29,8 @@ const ViewProduct = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShow(window.scrollY > 600 ? true : false);
+      const breakpoint = window.innerWidth >= 1000 ? 600 : 1100; // Adjust threshold for small devices
+      setShow(window.scrollY > breakpoint ? true : false);
     };
     window.addEventListener("scroll", handleScroll);
 
