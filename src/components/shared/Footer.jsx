@@ -13,8 +13,6 @@ import { cn } from "@/lib/utils";
 import { FaAngleRight } from "react-icons/fa6";
 import { HashLink as NavLink } from "react-router-hash-link";
 
-
-
 // navigate to other pages
 const pages = [
   { title: "Terms & Conditions", url: "/terms-and-conditions" },
@@ -84,8 +82,12 @@ const Footer = () => {
   return (
     <footer className="relative">
       {/* navigate to the top */}
-      <NavLink to="#navigate-top" smooth className="bg-ghost hover:bg-ghost/80 p-1 md:p-2 max-md:text-sm rounded-full absolute bottom-5 sm:bottom-16 right-5 -rotate-90">
-      <FaAngleRight/>
+      <NavLink
+        to="#navigate-top"
+        smooth
+        className="bg-ghost hover:bg-ghost/80 p-1 md:p-2 max-md:text-sm rounded-full absolute bottom-5 sm:bottom-16 right-5 -rotate-90"
+      >
+        <FaAngleRight />
       </NavLink>
 
       {/* footer container */}
@@ -95,7 +97,7 @@ const Footer = () => {
             <div
               key={index}
               className={cn(
-                "flex items-center gap-3 lg:px-14 border-secondary/65 border-r-2 whitespace-nowrap",
+                "flex items-center gap-3 lg:px-14 border-secondary/65 md:border-r-2 whitespace-nowrap",
                 index === 3 && "lg:border-none"
               )}
             >
@@ -196,7 +198,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center gap-2">
                 <AiOutlineMail className="text-primary" />
-                <span>info@wownex.com</span>
+                <span>info@storexpert.net</span>
               </p>
               <p className="flex gap-2">
                 <IoLocationOutline className="text-primary text-2xl md:w-9" />
@@ -209,20 +211,20 @@ const Footer = () => {
           </div>
         </div>
         <div className=" bg-slate-950 text-ghost">
-          <div className="container flex max-sm:flex-col justify-between p-6">
+          <div className="container flex items-center max-sm:flex-col justify-between p-6">
             <p>
               Copyright &copy; {year}{" "}
               <span className="font-semibold">Sellora</span> - All Rights
               Reserved
             </p>
-            <p className="max-sm:mt-4">
-              Developed by{" "}
+            <p className="max-sm:mt-2">
+              Website Provided By{" "}
               <Link
                 target="_blank"
-                to="https://apurbahasanj.netlify.app"
+                to="https://store-xpert.netlify.app/"
                 className="hover:text-primary/80 hover:underline font-semibold"
               >
-                VRTX-Forge
+                StoreXpert.net
               </Link>
             </p>
           </div>

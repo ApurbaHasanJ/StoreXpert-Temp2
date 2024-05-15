@@ -1,13 +1,13 @@
 import { cn } from "@/lib/utils";
 import products from "../../public/products.json";
-import { Button, buttonVariants } from "./ui/button";
+import { buttonVariants } from "./ui/button";
 import { Link } from "react-router-dom";
 
 const HighlightProducts = () => {
   const featuredProducts = products.slice(0, 3);
 
   return (
-    <section className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 items-center justify-between">
+    <section className="mt-6 md:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 items-center justify-between">
       {featuredProducts.map((product) => (
         <div
           key={product?._id}

@@ -8,9 +8,13 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { useSelector } from "react-redux";
 import AllDepartments from "../AllDepartments";
+import { RiFireLine } from "react-icons/ri";
+import NavItems from "./navbar/NavItems";
+import { IoCloseOutline } from "react-icons/io5";
 
 const PhoneNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [showDeals, setShowDeals] = useState(false);
 
   // cart quantity
   const selectedItem = useSelector((state) => state?.cart?.selectedItem);
@@ -24,26 +28,61 @@ const PhoneNavbar = () => {
     window.location.href = telUrl;
   };
 
+  //   <div className="md:hidden flex items-center gap-3 relative">
+  //   <Button
+  //     size="icon"
+  //     variant="icon"
+  //     onClick={() => setShowNavitems(!showNavitems)}
+  //     className="bg-primary hover:bg-primary/70 text-white "
+  //   >
+  //     <IoMdMenu className="text-xl" />
+  //   </Button>
+  //   <h4 className="text-primary md:hidden">Sellora</h4>
+  //   {showNavitems && (
+  //     <div className="bg-white border-r-2 border-b-2 grid grid-cols-1 gap-3 p-5 absolute top-[52px] -left-4 z-[11]">
+  //       <NavItems />
+  //     </div>
+  //   )}
+  // </div>
+
   return (
     <>
       <section className="md:hidden select-none sticky bottom-0 left-0 right-0 z-20 bg-primary py-4 px-5 phone-nav-round">
-        <div className="container flex items-center justify-between text-white">
+        <div className=" grid grid-cols-5 items-center justify-items-center justify-between text-white">
+          {/* all departments */}
+          <div
+            onClick={() => {
+              setShowMenu(!showMenu);
+              setShowDeals(false);
+            }}
+            className="hover:text-ghost/80 flex flex-col gap-1 items-center capitalize"
+          >
+            <RxDashboard className="text-lg" />
+            <span className="text-xs">Menu</span>
+          </div>
+
+          {/* Menu */}
+          <div
+            onClick={() => {
+              setShowDeals(!showDeals);
+              setShowMenu(false);
+            }}
+            className="hover:text-ghost/80 flex flex-col gap-1 items-center capitalize w-fit"
+          >
+            <RiFireLine className="text-lg" />
+            <span className="text-xs">deals</span>
+          </div>
+
           {/* home */}
           <NavLink
-            to="/"
+            to="/#navigate-top"
+            smooth
             className="hover:text-ghost/80 flex flex-col gap-1 items-center capitalize w-fit"
           >
             <GoHome className="text-lg" />
             <span className="text-xs">home</span>
           </NavLink>
-          {/* menu */}
-          <div
-            onClick={() => setShowMenu(!showMenu)}
-            className="hover:text-ghost/80 flex flex-col gap-1 items-center capitalize w-fit"
-          >
-            <RxDashboard className="text-lg" />
-            <span className="text-xs">categories</span>
-          </div>
+
           {/* call */}
           <div
             onClick={handleCallClick}
@@ -52,6 +91,7 @@ const PhoneNavbar = () => {
             <BsTelephone className="text-lg" />
             <span className="text-xs">call</span>
           </div>
+
           {/* cart */}
           <Link
             to="/cart"
@@ -65,17 +105,43 @@ const PhoneNavbar = () => {
           </Link>
         </div>
       </section>
-      {/* show menu */}
-      {showMenu && (
+
+      {/* show menu and deals */}
+      {showDeals | showMenu && (
         <div
-          onClick={() => setShowMenu(!showMenu)}
+          onClick={() => {
+            setShowMenu(false);
+            setShowDeals(false);
+          }}
           className={cn(
-            "md:hidden fixed transition-transform duration-1000 bg-slate-900/20 top-0 bottom-0 z-10",
-            showMenu ? "left-0 right-0" : "-left-[1000px]"
+            "md:hidden fixed duration-1000 bg-slate-900/20 top-0 bottom-0 z-10",
+            showDeals | showMenu ? "left-0 right-0" : "-left-[1000px]"
           )}
         >
-          <div className="h-full max-w-[290px] w-full">
-            <AllDepartments phone="Sellora" />
+          <div className="h-full max-w-[290px] w-full bg-white">
+
+            {/* show name and close button */}
+            <div className="flex items-center border-b justify-between p-3">
+              <h4 className="text-primary">Sellora</h4>
+              <button className="text-sm hover:text-primary flex items-center gap-1">
+                <IoCloseOutline />
+                Close
+              </button>
+            </div>
+
+            {/* show menu conditional */}
+            <div className={!showMenu && "hidden"}>
+              <AllDepartments setShowMenu={setShowMenu} />
+            </div>
+            {/* show deals */}
+            <div
+              className={cn(
+                "grid grid-cols-1",
+                !showDeals && "hidden"
+              )}
+            >
+              <NavItems />
+            </div>
           </div>
         </div>
       )}

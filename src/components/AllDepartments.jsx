@@ -53,26 +53,15 @@ const departments = [
   },
 ];
 
-const AllDepartments = ({ phone, setShowCategories }) => {
+const AllDepartments = ({ setShowMenu }) => {
   return (
     <div className="bg-white shadow-md pb-6 h-full overflow-y-scroll max-md:text-sm">
-      {/* for phone */}
-      {phone && (
-        <div className="flex items-center justify-between px-3 my-6">
-          <h4 className="text-primary">{phone}</h4>
-          <button className="text-sm hover:text-primary flex items-center gap-1">
-            <IoCloseOutline />
-            Close
-          </button>
-        </div>
-      )}
-
-      <div className="border-t max-md:mb-16">
+      <div className="max-md:mb-16">
         {departments.map((department, index) => (
           <Link
             key={index}
             to={`/shop/${department?.category}`}
-            onClick={() => setShowCategories(false)}
+            onClick={() => setShowMenu(false)}
             className="max-md:pl-3 md:py-4 md:pl-2 md:pr-10 flex items-center gap-2 whitespace-nowrap border-b py-4 text-secondary hover:md:text-primary hover:bg-gray-100/70"
           >
             <FaCaretRight /> <span>{department.item}</span>

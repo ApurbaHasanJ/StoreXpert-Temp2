@@ -99,22 +99,20 @@ const Cart = ({ deliveryCharge }) => {
               <TableBody>
                 {carts?.map((cart, i) => (
                   <TableRow key={i}>
-                    <TableCell className="font-medium flex items-center gap-3">
-                      <div className="p-1 text-red-500 hover:text-red-600">
+                    <TableCell className="font-medium flex items-center gap-1 pl-2">
+                      <div className="text-red-500 hover:text-red-600">
                         <MdDeleteForever
                           onClick={() => handleRemoveFromCart(cart?._id)}
                           className="text-xl md:text-2xl"
                         />
                       </div>
                       <img
-                        className="w-20 aspect-square bg-ghost "
+                        className="w-14 aspect-square bg-ghost "
                         src={cart?.images[0]}
                         alt={"item" + i + 1}
                       />
-                      <p className="max-sm:text-xs text-secondary/80 capitalize">
-                        {cart?.title.length > 45
-                          ? cart?.title.substring(0, 45) + "..."
-                          : cart?.title}
+                      <p className="max-sm:text-xs line-clamp-1 text-secondary/80 capitalize">
+                        {cart?.title}
                       </p>
                     </TableCell>
                     <TableCell className="border-x">
@@ -189,7 +187,8 @@ const Cart = ({ deliveryCharge }) => {
           <div className="text-center">
             <div className="mt-5 px-7 py-3 border-2 border-secondary/40 border-dashed text-secondary/80 ">
               <p className="md:text-xl font-medium">
-                পণ্য সম্পর্কে জানতে আমাদের কল করুনঃ
+              অর্ডার করতে সমস্যার সম্মুখিন হলে আমাদের কল করুনঃ
+
               </p>
               <div className="flex items-center justify-center gap-2 text-3xl">
                 <IoCallOutline /> <span>01710-696950</span>

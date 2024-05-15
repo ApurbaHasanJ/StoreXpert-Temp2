@@ -54,27 +54,12 @@ const Navbar = () => {
   };
 
   return (
-    <header className={cn(viewProduct === "view-product" && "bg-white")}>
+    <header className={cn(viewProduct === "view-product" ? "bg-white": "md:bg-ghost bg-white max-md:pb-3")}>
       {/* 1st column */}
       <div>
         <div className="container flex items-center justify-between gap-1 md:gap-10 py-5">
-          <h4 className="text-primary max-md:hidden">Sellora</h4>
-          <div className="md:hidden flex items-center gap-3 relative">
-            <Button
-              size="icon"
-              variant="icon"
-              onClick={() => setShowNavitems(!showNavitems)}
-              className="bg-primary hover:bg-primary/70 text-white "
-            >
-              <IoMdMenu className="text-xl" />
-            </Button>
-            <h4 className="text-primary md:hidden">Sellora</h4>
-            {showNavitems && (
-              <div className="bg-white border-r-2 border-b-2 grid grid-cols-1 gap-3 p-5 absolute top-[52px] -left-4 z-[11]">
-                <NavItems />
-              </div>
-            )}
-          </div>
+          <h4 className="text-primary">Sellora</h4>
+  
           {/* <img
             className="h-10 md:h-14"
             src="https://revel-html.codebasket.xyz/assets/images/logo.png"
@@ -102,7 +87,7 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-        <div className="md:hidden relative bg-white container z-10 py-3 transition-all ease-in-out">
+        <div className="md:hidden relative  container z-10 transition-all ease-in-out">
           <Search scroll={scroll} />
         </div>
       </div>

@@ -22,7 +22,7 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
         <input
           type="text"
           id="name"
-          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full"
+          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full placeholder:opacity-50"
           placeholder="এখানে আপনার নাম লিখুন"
           {...register("name", {
             required: "দয়া করে আপনার নাম লিখুন",
@@ -47,7 +47,7 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
           <input
             type="tel"
             id="phone"
-            className="focus:outline-none w-full p-2"
+            className="focus:outline-none w-full p-2 placeholder:opacity-50"
             placeholder="এখানে আপনার মোবাইল নম্বর লিখুন"
             {...register("phone", {
               required: "দয়া করে মোবাইল নম্বর লিখুন",
@@ -77,7 +77,7 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
         <input
           type="text"
           id="address"
-          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full"
+          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full placeholder:opacity-50"
           placeholder="এখানে আপনার সম্পূর্ণ ঠিকানা লিখুন"
           {...register("address", {
             required: "দয়া করে আপনার ঠিকানা লিখুন",
@@ -152,7 +152,7 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
         <input
           type="text"
           id="discountCode"
-          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full"
+          className="p-2 border border-secondary/40 drop-shadow-sm focus:outline-none w-full placeholder:opacity-50"
           placeholder="এখানে আপনার ডিসকাউন্ট কুপন লিখুন"
           {...register("discountCode")}
         />
@@ -162,7 +162,7 @@ const CheckoutForm = ({ setDeliveryCharge }) => {
           {errors.discountCode.message}
         </p>
       )}
-      <Button type="submit" size="lg" className="w-full font-semibold">
+      <Button type="submit" className="w-full font-semibold">
         অর্ডার কনফার্ম করুন
       </Button>
     </form>

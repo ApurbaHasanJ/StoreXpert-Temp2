@@ -47,7 +47,7 @@ const ViewProduct = () => {
       {/* showing add to cart on top, after scroll */}
       <div
         className={cn(
-          " bg-ghost py-3 fixed left-0 right-0 z-10 duration-700",
+          " bg-ghost shadow-sm border-b py-3 fixed left-0 right-0 z-10 duration-700",
           show ? "top-0" : "-top-96"
         )}
       >
@@ -59,7 +59,7 @@ const ViewProduct = () => {
             <Link
               to="#details"
               smooth
-              className="text-blue-600 hover:underline underline-offset-2"
+              className="text-primary hover:underline underline-offset-2"
             >
               Details
             </Link>

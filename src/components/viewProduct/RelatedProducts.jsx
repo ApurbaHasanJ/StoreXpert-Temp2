@@ -18,7 +18,7 @@ const RelatedProducts = ({ category }) => {
   const displayedProducts = relatedProducts.slice(0, 4);
 
   return (
-    <section className="mt-12 bg-ghost/30 my-10 py-10 px-6 shadow">
+    <section className="section-gap bg-ghost/30 shadow">
       <SectionHeader title="Related Products" category={displayedProducts[0]?.category}/>
 
       {/* <Button

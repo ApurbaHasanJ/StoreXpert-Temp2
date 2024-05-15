@@ -28,7 +28,7 @@ const NavItems = () => {
           key={index}
           to={nav?.url}
           smooth
-          className="nav-item capitalize">
+          className="nav-item capitalize max-md:pl-3 max-md:py-4 whitespace-nowrap max-md:border-b max-md:hover:bg-gray-100/70">
           {nav?.title}
         </NavLink>
       ))}

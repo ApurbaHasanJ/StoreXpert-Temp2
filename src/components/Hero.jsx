@@ -28,7 +28,7 @@ const heros = [
 
 const Hero = () => {
   return (
-    <div className="h-[530px] overflow-hidden flex gap-5 mt-5">
+    <div className="lg:h-[530px] overflow-hidden flex gap-5 pt-2 md:pt-5">
       <div className="max-lg:hidden ">
         <AllDepartments />
       </div>
@@ -51,7 +51,7 @@ const Hero = () => {
               <Card>
                 <CardContent className="flex items-center justify-center">
                   <img
-                    className="w-full h-[550px] object-cover"
+                    className="w-full lg:h-[550px] object-cover"
                     src={hero?.img}
                     alt=""
                   />

@@ -20,7 +20,7 @@ export const Shop = () => {
     <section className="container">
       <PageHeader props={`shop / ${params?.id}`} />
 
-      <div className="bg-white pb-10 px-6">
+      <div className="bg-white section-gap mt-4 md:mt-6">
         {!filteredProducts.length ? (
           <>
             <h6 className="font-thin py-3 text-primary text-right">
@@ -34,9 +34,9 @@ export const Shop = () => {
           </>
         ) : (
           <>
-            <div className="font-thin pt-5 text-secondary text-right flex items-center justify-between capitalize">
+            <div className="font-thin text-secondary text-right flex items-center justify-between capitalize">
               <h6>{params?.id}</h6>
-              <h6>{filteredProducts?.length} Products Found</h6>
+              <h6 className="text-secondary/60 font-thin">{filteredProducts?.length} Products Found</h6>
             </div>
             <ProductCards products={filteredProducts} />
           </>

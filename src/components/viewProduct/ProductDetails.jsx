@@ -7,14 +7,14 @@ import { FaCartPlus } from "react-icons/fa6";
 // import { IoCallOutline } from "react-icons/io5";
 // import { BsWhatsapp } from "react-icons/bs";
 import { ProductShortDesc } from "./ProductShortDesc";
-import freeDeliveryImg from "../../assets/others/free-delivery.png";
+import freeDeliveryImg from "../../assets/others/free-delivery2.png";
 import { useState } from "react";
 
 // sizes here for now...
 const sizes = ["M", "L", "XL", "2xl"];
 
 // colors here for now...
-const colors = ["red", "green", "yellow", "blue"];
+const colors = ["#eb4d4b", "#e056fd", "#f0932b", "#badc58", "#4834d4"];
 
 const ProductDetails = ({ product }) => {
   const dispatch = useDispatch();
@@ -37,14 +37,15 @@ const ProductDetails = ({ product }) => {
 
   return (
     <div className="w-full h-fit">
-      {/* product id */}
-      <div className="flex items-center gap-2">
-        <p>Product ID:</p>
-        <p className="text-secondary">{product?.product_id}</p>
-      </div>
-      <div className="flex items-center justify-between gap-3">
-        {/* stock and price */}
+      <div className="flex items-center justify-between gap-3 overflow-hidden">
+        {/* col 1 */}
         <div>
+          {/* product id */}
+          <div className="flex items-center gap-2">
+            <p>Product ID:</p>
+            <p className="text-secondary">{product?.product_id}</p>
+          </div>
+
           {/* price */}
           <div className="my-3 font-thin flex items-center gap-3">
             {/* current price */}
@@ -63,6 +64,7 @@ const ProductDetails = ({ product }) => {
               ৳ {product?.price}
             </s>
           </div>
+
           {/* stock availability */}
           <p
             className={cn(
@@ -74,25 +76,31 @@ const ProductDetails = ({ product }) => {
           </p>
         </div>
 
-        <img src={freeDeliveryImg} className="h-6" alt="" />
+        {/* col 2 */}
+        <img
+          src={freeDeliveryImg}
+          className="w-28 object-cover"
+          alt=""
+        />
       </div>
 
       {/* select color */}
       <div className={cn("mt-3", !colors && "hidden")}>
         <p className="mb-1">Select Color:</p>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 h-5 md:h-6">
           {colors?.map((color, i) => (
             <div
               key={i}
               className={cn(
-                "pb-1 h-5 md:h-7 duration-300",
-                selectedColor === color && "border-b md:border-b-2 border-secondary"
+                "duration-300",
+                selectedColor === color &&
+                  "border-2 border-primary rounded-full"
               )}
             >
               <div
                 style={{ backgroundColor: color }}
                 onClick={() => setColor(color)}
-                className="w-4 h-4 md:w-6 md:h-6 border rounded-full hover:drop-shadow-xl"
+                className="w-5 h-5 md:w-6 md:h-6 border rounded-full hover:drop-shadow-xl"
               ></div>
             </div>
           ))}
@@ -108,7 +116,7 @@ const ProductDetails = ({ product }) => {
               key={i}
               onClick={() => setSize(size)}
               className={cn(
-                "w-10 md:w-14 max-sm:text-xs aspect-video text-center place-content-center border border-secondary text-secondary hover:shadow-xl duration-300",
+                "w-11 md:w-16 max-md:text-xs aspect-video text-center place-content-center border border-secondary text-secondary hover:shadow-xl duration-300",
                 selectedSize === size && "bg-secondary text-white"
               )}
             >

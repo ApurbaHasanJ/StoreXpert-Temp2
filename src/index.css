@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 .container {
-  @apply px-4 max-w-7xl mx-auto;
+  @apply max-sm:px-2 px-4 max-w-7xl mx-auto;
 }
 
 .bg-linear {
   @apply bg-gradient-to-r from-indigo-200 via-rose-200 to-indigo-200 duration-300;
+}
+
+.section-gap{
+  @apply mt-6 md:mt-12 py-10 px-3 md:px-6
 }
 
 .nav-item {

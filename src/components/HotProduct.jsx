@@ -12,7 +12,7 @@ const HotProduct = () => {
   const date = new Date();
 
   return (
-    <section id="hot-product" className="mt-12 bg-white py-10 px-6 shadow">
+    <section id="hot-product" className="section-gap bg-white shadow">
       <SectionHeader title="Hot Deal This Week" category={product?.category}/>
       {/* card content */}
       <div className="mt-9 flex max-md:flex-col-reverse md:items-center justify-between gap-6">
@@ -77,7 +77,7 @@ const HotProduct = () => {
           </Link>
         </div>
         {/* product img */}
-        <div className="md:max-w-xs max-md:mx-auto aspect-square bg-ghost border relative w-full overflow-hidden rounded-xl">
+        <div className="md:max-w-xs max-md:mx-auto aspect-square bg-ghost border relative w-full overflow-hidden">
           <Link to={`/view-product/${product?._id}`}>
             <img
               className="scale-100 hover:scale-105 duration-300"

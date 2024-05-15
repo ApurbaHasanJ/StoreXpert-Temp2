@@ -10,7 +10,7 @@ import {
 
 const PopularCategories = () => {
   return (
-    <section className="mt-12 bg-white py-10 px-6">
+    <section className="section-gap bg-white">
       <SectionHeader title="Explore Popular Categories" />
       <Carousel
         className="w-full h-full"
@@ -28,7 +28,7 @@ const PopularCategories = () => {
           {categories.map((cat) => (
             <CarouselItem
               key={cat?._id}
-              className="max-md:basis-1/4 md:basis-1/6"
+              className="max-md:basis-1/3 md:basis-1/6"
             >
               <Card>
                 <CardContent className="flex flex-col items-center justify-center">
