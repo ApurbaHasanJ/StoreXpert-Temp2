@@ -26,14 +26,14 @@ const BestSellingProduct = () => {
         ]}
         className="w-72 relative"
       >
-        <div className="bg-primary/5 p-4 flex items-center justify-between">
+        <div className="bg-primary/5 mb-2 p-4 flex items-center justify-between">
           <p className=" text-primary">BEST SELLING</p>
           <div className="mr-7 flex items-center place-content-center gap-2 justify-center relative">
             <CarouselNext className="rounded-none" />
             <CarouselPrevious className="rounded-none" />
           </div>
         </div>
-        <CarouselContent className="p-2 my-1 h-[468px]">
+        <CarouselContent className="px-2 h-[464px]">
           {products.map((product) => (
             <CarouselItem key={product?._id} className="basis-1/4">
               <Link to={`/view-product/${product?._id}`}>
