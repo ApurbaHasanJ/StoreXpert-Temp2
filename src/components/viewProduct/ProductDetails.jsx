@@ -8,7 +8,6 @@ import { FaCartPlus } from "react-icons/fa6";
 // import { BsWhatsapp } from "react-icons/bs";
 import { ProductShortDesc } from "./ProductShortDesc";
 import freeDeliveryImg from "../../assets/others/free-delivery2.png";
-import brandLogo from "../../assets/others/ulanzi_logo.jpeg";
 import { useState } from "react";
 
 // sizes here for now...
@@ -26,15 +25,6 @@ const ProductDetails = ({ product }) => {
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
   };
-
-  // direct call
-  // const handleCallClick = () => {
-  //   const phoneNumber = "+8801884167824";
-  //   // Create a tel URL with the phone number
-  //   const telUrl = `tel:${phoneNumber}`;
-  //   // Open the phone app with the provided phone number
-  //   window.location.href = telUrl;
-  // };
 
   return (
     <div className="w-full h-fit">
@@ -75,21 +65,15 @@ const ProductDetails = ({ product }) => {
           >
             {product?.inStock ? "In Stock" : "Sold Out"}
           </p>
-          <img
-            src={brandLogo}
-            className="w-[80px] md:w-28 aspect-square object-contain"
-            alt=""
-          />
         </div>
 
         {/* col 2 */}
-        <div>
-          <img
-            src={freeDeliveryImg}
-            className="w-[80px] md:w-28 aspect-square object-contain"
-            alt=""
-          />
-        </div>
+
+        <img
+          src={freeDeliveryImg}
+          className="w-[80px] md:w-28 aspect-square object-contain"
+          alt=""
+        />
       </div>
 
       {/* select color */}

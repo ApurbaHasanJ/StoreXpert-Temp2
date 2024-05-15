@@ -21,6 +21,7 @@ import emptyCartImg from "../assets/others/empty-cart.svg";
 import { useSelector, useDispatch } from "react-redux";
 import { FaMinus, FaPlus, FaRightLong } from "react-icons/fa6";
 import { buttonVariants } from "@/components/ui/button";
+import PageHeader from "@/components/shared/PageHeader";
 
 export const Stars = () => {
   return (
@@ -35,12 +36,12 @@ export const Stars = () => {
 const Cart = ({ deliveryCharge }) => {
   const location = useLocation();
 
+  window.scrollTo({ top: 0 });
+
   const carts = useSelector((state) => state?.cart?.products);
   const subTotal = useSelector((state) => state?.cart?.subTotal);
   const dispatch = useDispatch();
   // console.log(subTotal);
-
-  // window.scrollTo({ top: 0 });
 
   const handleIncreaseQuantity = (id) => {
     dispatch(increaseQuantity(id));
@@ -55,9 +56,13 @@ const Cart = ({ deliveryCharge }) => {
   };
 
   return (
-    <section
-      className={location?.pathname === "/cart" ? "mt-8 mb-16 container" : ""}
-    >
+    <section className={location?.pathname === "/cart" ? "container" : ""}>
+      {/* page header */}
+      <div className={location?.pathname === "/cart" ? "" : "hidden"}>
+        <PageHeader props={"cart"} />
+      </div>
+      
+      {/* carts */}
       <div className="bg-white border-t border-ghost select-none shadow-md md:p-5 p-2">
         <p className="text-center bg-ghost text-secondary md:text-2xl text-xl font-semibold p-3">
           আপনার অর্ডার
@@ -187,8 +192,7 @@ const Cart = ({ deliveryCharge }) => {
           <div className="text-center">
             <div className="mt-5 px-7 py-3 border-2 border-secondary/40 border-dashed text-secondary/80 ">
               <p className="md:text-xl font-medium">
-              অর্ডার করতে সমস্যার সম্মুখিন হলে আমাদের কল করুনঃ
-
+                অর্ডার করতে সমস্যার সম্মুখিন হলে আমাদের কল করুনঃ
               </p>
               <div className="flex items-center justify-center gap-2 text-3xl">
                 <IoCallOutline /> <span>01710-696950</span>
