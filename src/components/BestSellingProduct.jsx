@@ -33,19 +33,19 @@ const BestSellingProduct = () => {
             <CarouselPrevious className="rounded-none" />
           </div>
         </div>
-        <CarouselContent className="p-2 my-[3px] h-[474px]">
+        <CarouselContent className="p-2 my-1 h-[468px]">
           {products.map((product) => (
             <CarouselItem key={product?._id} className="basis-1/4">
               <Link to={`/view-product/${product?._id}`}>
                 <Card>
                   <CardContent className="flex items-center gap-2">
                     <img
-                      className="w-24 aspect-square object-cover rounded-lg"
+                      className="w-[90px] aspect-square object-cover rounded-lg"
                       src={product?.images[0]}
                       alt=""
                     />
                     <div>
-                      <p className="line-clamp-2 capitalize">{product?.title}</p>
+                      <p className="line-clamp-2 capitalize text-sm">{product?.title}</p>
                       <div className="flex items-center gap-3 mb-3">
                         <p className="text-primary md:text-lg">
                           ৳{" "}

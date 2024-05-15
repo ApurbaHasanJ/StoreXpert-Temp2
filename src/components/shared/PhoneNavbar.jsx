@@ -90,44 +90,39 @@ const PhoneNavbar = () => {
       </section>
 
       {/* show menu and deals */}
-      {showDeals | showMenu && (
-        <div
-          onClick={() => {
-            setShowMenu(false);
-            setShowDeals(false);
-          }}
-          className={cn(
-            "md:hidden fixed duration-1000 bg-slate-900/20 top-0 bottom-0 z-10",
-            showDeals | showMenu ? "left-0 right-0" : "-left-[1000px]"
-          )}
-        >
-          <div className="h-full max-w-[290px] w-full bg-white">
+      {showDeals ||
+        (showMenu && (
+          <div
+            onClick={() => {
+              setShowMenu(false);
+              setShowDeals(false);
+            }}
+            className={cn(
+              "md:hidden fixed duration-1000 bg-slate-900/20 top-0 bottom-0 z-10",
+              showDeals || showMenu ? "left-0 right-0" : "-left-[1000px]"
+            )}
+          >
+            <div className="h-full max-w-[290px] w-full bg-white">
+              {/* show name and close button */}
+              <div className="flex items-center border-b justify-between p-3">
+                <h4 className="text-primary">Sellora</h4>
+                <button className="text-sm hover:text-primary flex items-center gap-1">
+                  <IoCloseOutline />
+                  Close
+                </button>
+              </div>
 
-            {/* show name and close button */}
-            <div className="flex items-center border-b justify-between p-3">
-              <h4 className="text-primary">Sellora</h4>
-              <button className="text-sm hover:text-primary flex items-center gap-1">
-                <IoCloseOutline />
-                Close
-              </button>
-            </div>
-
-            {/* show menu conditional */}
-            <div className={!showMenu && "hidden"}>
-              <AllDepartments setShowMenu={setShowMenu} />
-            </div>
-            {/* show deals */}
-            <div
-              className={cn(
-                "grid grid-cols-1",
-                !showDeals && "hidden"
-              )}
-            >
-              <NavItems />
+              {/* show menu conditional */}
+              <div className={!showMenu && "hidden"}>
+                <AllDepartments setShowMenu={setShowMenu} />
+              </div>
+              {/* show deals */}
+              <div className={cn("grid grid-cols-1", !showDeals && "hidden")}>
+                <NavItems />
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        ))}
     </>
   );
 };
