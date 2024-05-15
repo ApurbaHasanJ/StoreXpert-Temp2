@@ -30,8 +30,8 @@ const navItems = [
     url: "/",
   },
   {
-    title: "flash sale",
-    url: "/#flash-sale",
+    title: "flash deal",
+    url: "/#flash-deal",
   },
   {
     title: "hot product",
@@ -39,7 +39,7 @@ const navItems = [
   },
   {
     title: "shop",
-    url: "/#shop",
+    url: "/shop/new-arrivals",
   },
 ];
 
@@ -155,13 +155,13 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-1 mt-7 capitalize">
               {navItems?.map((item, index) => (
-                <Link
+                <NavLink
                   key={index}
                   to={item?.url}
                   className="hover:underline underline-offset-2"
                 >
                   {item?.title}
-                </Link>
+                </NavLink>
               ))}
             </div>
           </div>

@@ -1,6 +1,7 @@
 import CheckoutForm from "@/components/CheckoutForm";
 import { useEffect, useState } from "react";
 import Cart from "./Cart";
+import PageHeader from "@/components/shared/PageHeader";
 
 const Checkout = () => {
   const [deliveryCharge, setDeliveryCharge] = useState(0);
@@ -10,7 +11,8 @@ const Checkout = () => {
   }, []);
 
   return (
-    <section className="bg-ghost  py-10">
+    <section className="bg-ghost">
+      <PageHeader props={"checkout"}/>
       <div className="container flex max-lg:flex-col gap-5">
         <div className="bg-white shadow-md p-5 lg:w-1/2 h-fit">
           <p className="text-center md:text-xl text-lg font-medium mb-10">

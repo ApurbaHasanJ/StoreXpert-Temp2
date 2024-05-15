@@ -6,7 +6,7 @@ const PageHeader = ({ props }) => {
   return (
     <div className={cn("py-3 border-b", !viewProductPage && "bg-ghost")}>
       <div className="container flex items-center justify-start gap-3 text-xs">
-        <p className="text-blue-600">Home</p> /
+        <p className="text-primary">Home</p> /
         <p className="text-secondary capitalize">{props}</p>
       </div>
     </div>

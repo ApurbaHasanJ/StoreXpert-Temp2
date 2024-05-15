@@ -45,7 +45,9 @@ const BestSellingProduct = () => {
                       alt=""
                     />
                     <div>
-                      <p className="line-clamp-2 capitalize text-sm">{product?.title}</p>
+                      <p className="line-clamp-2 capitalize text-sm">
+                        {product?.title}
+                      </p>
                       <div className="flex items-center gap-3 mb-3">
                         <p className="text-primary md:text-lg">
                           ৳{" "}
