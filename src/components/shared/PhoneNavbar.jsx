@@ -28,23 +28,6 @@ const PhoneNavbar = () => {
     window.location.href = telUrl;
   };
 
-  //   <div className="md:hidden flex items-center gap-3 relative">
-  //   <Button
-  //     size="icon"
-  //     variant="icon"
-  //     onClick={() => setShowNavitems(!showNavitems)}
-  //     className="bg-primary hover:bg-primary/70 text-white "
-  //   >
-  //     <IoMdMenu className="text-xl" />
-  //   </Button>
-  //   <h4 className="text-primary md:hidden">Sellora</h4>
-  //   {showNavitems && (
-  //     <div className="bg-white border-r-2 border-b-2 grid grid-cols-1 gap-3 p-5 absolute top-[52px] -left-4 z-[11]">
-  //       <NavItems />
-  //     </div>
-  //   )}
-  // </div>
-
   return (
     <>
       <section className="md:hidden select-none sticky bottom-0 left-0 right-0 z-20 bg-primary py-4 px-5 phone-nav-round">

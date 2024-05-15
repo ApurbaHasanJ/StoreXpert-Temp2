@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { FaCaretRight } from "react-icons/fa6";
-import { IoCloseOutline } from "react-icons/io5";
 
 const departments = [
   {
