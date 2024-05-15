@@ -8,6 +8,7 @@ import { FaCartPlus } from "react-icons/fa6";
 // import { BsWhatsapp } from "react-icons/bs";
 import { ProductShortDesc } from "./ProductShortDesc";
 import freeDeliveryImg from "../../assets/others/free-delivery2.png";
+import brandLogo from "../../assets/others/ulanzi_logo.jpeg";
 import { useState } from "react";
 
 // sizes here for now...
@@ -37,7 +38,7 @@ const ProductDetails = ({ product }) => {
 
   return (
     <div className="w-full h-fit">
-      <div className="flex items-center justify-between gap-3 overflow-hidden">
+      <div className="flex items-start justify-between gap-3 overflow-hidden">
         {/* col 1 */}
         <div>
           {/* product id */}
@@ -74,14 +75,21 @@ const ProductDetails = ({ product }) => {
           >
             {product?.inStock ? "In Stock" : "Sold Out"}
           </p>
+          <img
+            src={brandLogo}
+            className="w-[80px] md:w-28 aspect-square object-contain"
+            alt=""
+          />
         </div>
 
         {/* col 2 */}
-        <img
-          src={freeDeliveryImg}
-          className="w-28 object-cover"
-          alt=""
-        />
+        <div>
+          <img
+            src={freeDeliveryImg}
+            className="w-[80px] md:w-28 aspect-square object-contain"
+            alt=""
+          />
+        </div>
       </div>
 
       {/* select color */}
